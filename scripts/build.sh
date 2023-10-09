@@ -2,8 +2,7 @@
 
 set -eou pipefail
 
-# export ROOT=/lustre/orion/CSC465/scratch/cpearson/frontier-gpu-bandwidth
-export ROOT=$HOME/frontier-gpu-bandwidth
+export ROOT=/lustre/orion/csc465/scratch/cpearson/frontier-gpu-bandwidth
 export SCOPE_SRC=${ROOT}/comm_scope
 export SCOPE_BUILD=${ROOT}/build
 
