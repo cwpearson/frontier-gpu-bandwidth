@@ -100,9 +100,9 @@ for pattern in [
     "implicit_managed_HostWrGPU_fine",
     "implicit_managed_GPUWrHost_coarse",
     "implicit_managed_GPUWrHost_fine",
-    "implicit_mapped_GPURdHost"
+    "implicit_mapped_GPURdHost",
     "implicit_mapped_GPUWrGPU",
-    "implicit_mapped_GPUWrHost"
+    "implicit_mapped_GPUWrHost",
     "implicit_mapped_HostWrGPU",
     "prefetch_managed_GPUToGPU",
     "prefetch_managed_GPUToHost",
