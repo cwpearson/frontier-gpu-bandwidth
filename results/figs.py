@@ -29,9 +29,11 @@ for e in RESULTS_DIR.iterdir():
 
             run_name = benchmark["run_name"]
 
-            if "Comm_prefetch_managed_GPUToGPU/0/0" in run_name:
+            if "GPUToGPU" in run_name and "/0/0/" in run_name:
                 continue
-            elif "/0/0/" in run_name:
+            if "GPUWrGPU" in run_name and "/0/0/" in run_name:
+                continue
+            if "GPURdGPU" in run_name and "/0/0/" in run_name:
                 continue
 
             xs, ys = data.get(run_name, ([],[]))
@@ -87,13 +89,24 @@ for pattern in [
     "hipMemcpyAsync_GPUToGPU",
     "hipMemcpyAsync_GPUToPageable",
     "hipMemcpyAsync_GPUToPinned",
+    "hipMemcpyAsync_PageableToGPU",
+    "hipMemcpyAsync_PinnedToGPU",
+    "hipManaged_HostToGPUWriteDst",
     "implicit_managed_GPURdHost_coarse",
     "implicit_managed_GPURdHost_fine",
     "implicit_managed_GPUWrGPU_coarse",
     "implicit_managed_GPUWrGPU_fine",
-    "implicit_mapped_GPURdHost",
+    "implicit_managed_HostWrGPU_coarse",
+    "implicit_managed_HostWrGPU_fine",
+    "implicit_managed_GPUWrHost_coarse",
+    "implicit_managed_GPUWrHost_fine",
+    "implicit_mapped_GPURdHost"
+    "implicit_mapped_GPUWrGPU",
+    "implicit_mapped_GPUWrHost"
+    "implicit_mapped_HostWrGPU",
     "prefetch_managed_GPUToGPU",
     "prefetch_managed_GPUToHost",
+    "prefetch_managed_HostToGPU",
 ]:
     plt.clf()
     for name, (x, t, terr, bw, bwerr) in series.items():
