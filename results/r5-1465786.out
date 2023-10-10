@@ -1,0 +1,205 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "amd/5.3.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-amd/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+Mon 09 Oct 2023 08:12:06 PM EDT
+Comm|Scope 0.12.0 v0.12.0@124999d
+  scope 1.1.2 HEAD@124999d
+    spdlog 1.6.1
+    benchmark 1.5.1
+[2023-10-09 20:12:09.020] [scope] [info] recorded system CPU turbo state
+[2023-10-09 20:12:09.021] [scope] [info] recorded CPU goveror
+[2023-10-09 20:12:09.021] [scope] [error] unable to disable CPU turbo: no permission. Run with higher privileges?
+[2023-10-09 20:12:09.021] [scope] [error] unable to set OS CPU governor to maximum: no permission. Run with higher privileges?
+2023-10-09T20:12:11-04:00
+Running /lustre/orion/csc465/scratch/cpearson/frontier-gpu-bandwidth/build/comm_scope
+Run on (128 X 1795.68 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x64)
+  L1 Instruction 32 KiB (x64)
+  L2 Unified 512 KiB (x64)
+  L3 Unified 32768 KiB (x8)
+Load Average: 0.91, 7.45, 10.79
+---------------------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                       Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------------------
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):12/manual_time              3016 ns       269728 ns       233544 bytes=4.096k bytes_per_second=1.26499G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):12/manual_time              2966 ns       270883 ns       233544 bytes=4.096k bytes_per_second=1.28596G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):12/manual_time              2981 ns       269693 ns       233544 bytes=4.096k bytes_per_second=1.27974G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):12/manual_time              2987 ns       270624 ns       233544 bytes=4.096k bytes_per_second=1.27727G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):12/manual_time              2983 ns       268939 ns       233544 bytes=4.096k bytes_per_second=1.27885G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):12/manual_time_mean         2986 ns       269973 ns            5 bytes=4.096k bytes_per_second=1.27736G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):12/manual_time_median       2983 ns       269728 ns            5 bytes=4.096k bytes_per_second=1.27885G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):12/manual_time_stddev       18.0 ns          784 ns            5 bytes=0 bytes_per_second=7.84637M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):12/manual_time_cv           0.60 %          0.29 %             5 bytes=0.00% bytes_per_second=0.60% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):13/manual_time              3067 ns       280318 ns       227769 bytes=8.192k bytes_per_second=2.48746G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):13/manual_time              3081 ns       280905 ns       227769 bytes=8.192k bytes_per_second=2.47597G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):13/manual_time              3040 ns       281396 ns       227769 bytes=8.192k bytes_per_second=2.50994G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):13/manual_time              3063 ns       282364 ns       227769 bytes=8.192k bytes_per_second=2.49123G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):13/manual_time              3058 ns       280979 ns       227769 bytes=8.192k bytes_per_second=2.49508G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):13/manual_time_mean         3062 ns       281193 ns            5 bytes=8.192k bytes_per_second=2.49194G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):13/manual_time_median       3063 ns       280979 ns            5 bytes=8.192k bytes_per_second=2.49123G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):13/manual_time_stddev       15.1 ns          759 ns            5 bytes=0 bytes_per_second=12.639M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):13/manual_time_cv           0.49 %          0.27 %             5 bytes=0.00% bytes_per_second=0.50% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):14/manual_time              3500 ns       305919 ns       199950 bytes=16.384k bytes_per_second=4.35947G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):14/manual_time              3498 ns       305739 ns       199950 bytes=16.384k bytes_per_second=4.36242G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):14/manual_time              3506 ns       305300 ns       199950 bytes=16.384k bytes_per_second=4.35192G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):14/manual_time              3498 ns       305128 ns       199950 bytes=16.384k bytes_per_second=4.36194G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):14/manual_time              3482 ns       305001 ns       199950 bytes=16.384k bytes_per_second=4.38156G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):14/manual_time_mean         3497 ns       305417 ns            5 bytes=16.384k bytes_per_second=4.36346G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):14/manual_time_median       3498 ns       305300 ns            5 bytes=16.384k bytes_per_second=4.36194G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):14/manual_time_stddev       8.76 ns          396 ns            5 bytes=0 bytes_per_second=11.2213M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):14/manual_time_cv           0.25 %          0.13 %             5 bytes=0.00% bytes_per_second=0.25% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):15/manual_time              4306 ns       352079 ns       161987 bytes=32.768k bytes_per_second=7.08712G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):15/manual_time              4348 ns       352247 ns       161987 bytes=32.768k bytes_per_second=7.01909G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):15/manual_time              4334 ns       351926 ns       161987 bytes=32.768k bytes_per_second=7.04178G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):15/manual_time              4335 ns       352437 ns       161987 bytes=32.768k bytes_per_second=7.03933G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):15/manual_time              4311 ns       352361 ns       161987 bytes=32.768k bytes_per_second=7.0784G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):15/manual_time_mean         4327 ns       352210 ns            5 bytes=32.768k bytes_per_second=7.05314G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):15/manual_time_median       4334 ns       352247 ns            5 bytes=32.768k bytes_per_second=7.04178G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):15/manual_time_stddev       17.5 ns          208 ns            5 bytes=0 bytes_per_second=29.2871M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):15/manual_time_cv           0.41 %          0.06 %             5 bytes=0.00% bytes_per_second=0.41% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):16/manual_time              5345 ns       440822 ns       130995 bytes=65.536k bytes_per_second=11.4198G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):16/manual_time              5348 ns       440375 ns       130995 bytes=65.536k bytes_per_second=11.4121G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):16/manual_time              5352 ns       440549 ns       130995 bytes=65.536k bytes_per_second=11.4033G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):16/manual_time              5343 ns       441081 ns       130995 bytes=65.536k bytes_per_second=11.4238G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):16/manual_time              5346 ns       441041 ns       130995 bytes=65.536k bytes_per_second=11.4161G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):16/manual_time_mean         5347 ns       440774 ns            5 bytes=65.536k bytes_per_second=11.415G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):16/manual_time_median       5346 ns       440822 ns            5 bytes=65.536k bytes_per_second=11.4161G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):16/manual_time_stddev       3.69 ns          307 ns            5 bytes=0 bytes_per_second=8.05354M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):16/manual_time_cv           0.07 %          0.07 %             5 bytes=0.00% bytes_per_second=0.07% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):17/manual_time              7329 ns       622063 ns        94802 bytes=131.072k bytes_per_second=16.6566G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):17/manual_time              7300 ns       621012 ns        94802 bytes=131.072k bytes_per_second=16.7228G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):17/manual_time              7390 ns       620054 ns        94802 bytes=131.072k bytes_per_second=16.5193G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):17/manual_time              7328 ns       620951 ns        94802 bytes=131.072k bytes_per_second=16.6571G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):17/manual_time              7328 ns       620685 ns        94802 bytes=131.072k bytes_per_second=16.6581G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):17/manual_time_mean         7335 ns       620953 ns            5 bytes=131.072k bytes_per_second=16.6428G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):17/manual_time_median       7328 ns       620951 ns            5 bytes=131.072k bytes_per_second=16.6571G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):17/manual_time_stddev       33.0 ns          727 ns            5 bytes=0 bytes_per_second=76.421M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):17/manual_time_cv           0.45 %          0.12 %             5 bytes=0.00% bytes_per_second=0.45% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):18/manual_time             12068 ns       975908 ns        58081 bytes=262.144k bytes_per_second=20.2299G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):18/manual_time             12051 ns       976102 ns        58081 bytes=262.144k bytes_per_second=20.2589G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):18/manual_time             12054 ns       976893 ns        58081 bytes=262.144k bytes_per_second=20.2542G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):18/manual_time             12111 ns       976223 ns        58081 bytes=262.144k bytes_per_second=20.158G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):18/manual_time             12095 ns       975846 ns        58081 bytes=262.144k bytes_per_second=20.1851G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):18/manual_time_mean        12076 ns       976194 ns            5 bytes=262.144k bytes_per_second=20.2172G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):18/manual_time_median      12068 ns       976102 ns            5 bytes=262.144k bytes_per_second=20.2299G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):18/manual_time_stddev       26.4 ns          419 ns            5 bytes=0 bytes_per_second=45.2145M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):18/manual_time_cv           0.22 %          0.04 %             5 bytes=0.00% bytes_per_second=0.22% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):19/manual_time             20139 ns      1692873 ns        34655 bytes=524.288k bytes_per_second=24.2451G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):19/manual_time             20149 ns      1689509 ns        34655 bytes=524.288k bytes_per_second=24.2339G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):19/manual_time             20186 ns      1691135 ns        34655 bytes=524.288k bytes_per_second=24.1886G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):19/manual_time             20169 ns      1854165 ns        34655 bytes=524.288k bytes_per_second=24.2097G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):19/manual_time             20073 ns      1691847 ns        34655 bytes=524.288k bytes_per_second=24.3253G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):19/manual_time_mean        20143 ns      1723906 ns            5 bytes=524.288k bytes_per_second=24.2405G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):19/manual_time_median      20149 ns      1691847 ns            5 bytes=524.288k bytes_per_second=24.2339G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):19/manual_time_stddev       43.3 ns        72828 ns            5 bytes=0 bytes_per_second=53.4234M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):19/manual_time_cv           0.21 %          4.22 %             5 bytes=0.00% bytes_per_second=0.22% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):20/manual_time             35785 ns      3132003 ns        19553 bytes=1048.58k bytes_per_second=27.2897G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):20/manual_time             35765 ns      3170002 ns        19553 bytes=1048.58k bytes_per_second=27.3047G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):20/manual_time             35684 ns      3145125 ns        19553 bytes=1048.58k bytes_per_second=27.3668G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):20/manual_time             35685 ns      3191220 ns        19553 bytes=1048.58k bytes_per_second=27.3665G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):20/manual_time             35687 ns      3138235 ns        19553 bytes=1048.58k bytes_per_second=27.3647G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):20/manual_time_mean        35721 ns      3155317 ns            5 bytes=1048.58k bytes_per_second=27.3385G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):20/manual_time_median      35687 ns      3145125 ns            5 bytes=1048.58k bytes_per_second=27.3647G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):20/manual_time_stddev       49.8 ns        24718 ns            5 bytes=0 bytes_per_second=38.9931M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):20/manual_time_cv           0.14 %          0.78 %             5 bytes=0.00% bytes_per_second=0.14% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):21/manual_time             67095 ns      6300374 ns        10473 bytes=2.09715M bytes_per_second=29.1098G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):21/manual_time             67100 ns      6329109 ns        10473 bytes=2.09715M bytes_per_second=29.1076G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):21/manual_time             67299 ns      6052741 ns        10473 bytes=2.09715M bytes_per_second=29.0214G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):21/manual_time             67279 ns      6027409 ns        10473 bytes=2.09715M bytes_per_second=29.0303G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):21/manual_time             67238 ns      6154337 ns        10473 bytes=2.09715M bytes_per_second=29.0479G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):21/manual_time_mean        67202 ns      6172794 ns            5 bytes=2.09715M bytes_per_second=29.0634G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):21/manual_time_median      67238 ns      6154337 ns            5 bytes=2.09715M bytes_per_second=29.0479G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):21/manual_time_stddev       98.1 ns       138384 ns            5 bytes=0 bytes_per_second=43.4775M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):21/manual_time_cv           0.15 %          2.24 %             5 bytes=0.00% bytes_per_second=0.15% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):22/manual_time            129194 ns     12399681 ns         5414 bytes=4.1943M bytes_per_second=30.2356G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):22/manual_time            129198 ns     12335255 ns         5414 bytes=4.1943M bytes_per_second=30.2347G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):22/manual_time            129168 ns     12279013 ns         5414 bytes=4.1943M bytes_per_second=30.2417G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):22/manual_time            129235 ns     12278607 ns         5414 bytes=4.1943M bytes_per_second=30.2258G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):22/manual_time            129125 ns     12277392 ns         5414 bytes=4.1943M bytes_per_second=30.2516G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):22/manual_time_mean       129184 ns     12313990 ns            5 bytes=4.1943M bytes_per_second=30.2379G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):22/manual_time_median     129194 ns     12279013 ns            5 bytes=4.1943M bytes_per_second=30.2356G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):22/manual_time_stddev       40.8 ns        53875 ns            5 bytes=0 bytes_per_second=9.78229M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):22/manual_time_cv           0.03 %          0.44 %             5 bytes=0.00% bytes_per_second=0.03% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):23/manual_time            253974 ns     24478736 ns         2749 bytes=8.38861M bytes_per_second=30.761G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):23/manual_time            253650 ns     24125953 ns         2749 bytes=8.38861M bytes_per_second=30.8003G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):23/manual_time            253572 ns     24432672 ns         2749 bytes=8.38861M bytes_per_second=30.8098G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):23/manual_time            253509 ns     24321586 ns         2749 bytes=8.38861M bytes_per_second=30.8174G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):23/manual_time            253525 ns     24168985 ns         2749 bytes=8.38861M bytes_per_second=30.8155G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):23/manual_time_mean       253646 ns     24305586 ns            5 bytes=8.38861M bytes_per_second=30.8008G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):23/manual_time_median     253572 ns     24321586 ns            5 bytes=8.38861M bytes_per_second=30.8098G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):23/manual_time_stddev        191 ns       155977 ns            5 bytes=0 bytes_per_second=23.7761M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):23/manual_time_cv           0.08 %          0.64 %             5 bytes=0.00% bytes_per_second=0.08% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):24/manual_time            510336 ns     47252602 ns         1264 bytes=16.7772M bytes_per_second=30.6171G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):24/manual_time            521937 ns     47662219 ns         1264 bytes=16.7772M bytes_per_second=29.9366G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):24/manual_time            507653 ns     48209250 ns         1264 bytes=16.7772M bytes_per_second=30.7789G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):24/manual_time            514069 ns     48777460 ns         1264 bytes=16.7772M bytes_per_second=30.3947G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):24/manual_time            717061 ns     47884164 ns         1264 bytes=16.7772M bytes_per_second=21.7903G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):24/manual_time_mean       554211 ns     47957139 ns            5 bytes=16.7772M bytes_per_second=28.7035G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):24/manual_time_median     514069 ns     47884164 ns            5 bytes=16.7772M bytes_per_second=30.3947G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):24/manual_time_stddev      91195 ns       575578 ns            5 bytes=0 bytes_per_second=3.87756G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):24/manual_time_cv          16.45 %          1.20 %             5 bytes=0.00% bytes_per_second=13.51% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):25/manual_time           1151491 ns     94004741 ns          593 bytes=33.5544M bytes_per_second=27.1387G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):25/manual_time           1157849 ns     94034433 ns          593 bytes=33.5544M bytes_per_second=26.9897G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):25/manual_time           1203965 ns     94025400 ns          593 bytes=33.5544M bytes_per_second=25.9559G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):25/manual_time           1901943 ns     94730253 ns          593 bytes=33.5544M bytes_per_second=16.4306G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):25/manual_time           1135259 ns     93864301 ns          593 bytes=33.5544M bytes_per_second=27.5268G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):25/manual_time_mean      1310101 ns     94131826 ns            5 bytes=33.5544M bytes_per_second=24.8083G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):25/manual_time_median    1157849 ns     94025400 ns            5 bytes=33.5544M bytes_per_second=26.9897G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):25/manual_time_stddev     331832 ns       341558 ns            5 bytes=0 bytes_per_second=4.71919G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):25/manual_time_cv          25.33 %          0.36 %             5 bytes=0.00% bytes_per_second=19.02% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):26/manual_time           1550482 ns    188731903 ns          445 bytes=67.1089M bytes_per_second=40.31G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):26/manual_time           1719807 ns    185658476 ns          445 bytes=67.1089M bytes_per_second=36.3413G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):26/manual_time           1564187 ns    188459611 ns          445 bytes=67.1089M bytes_per_second=39.9569G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):26/manual_time           1563356 ns    188618228 ns          445 bytes=67.1089M bytes_per_second=39.9781G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):26/manual_time           1573786 ns    187419078 ns          445 bytes=67.1089M bytes_per_second=39.7132G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):26/manual_time_mean      1594324 ns    187777459 ns            5 bytes=67.1089M bytes_per_second=39.2599G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):26/manual_time_median    1564187 ns    188459611 ns            5 bytes=67.1089M bytes_per_second=39.9569G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):26/manual_time_stddev      70635 ns      1294383 ns            5 bytes=0 bytes_per_second=1.64531G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):26/manual_time_cv           4.43 %          0.69 %             5 bytes=0.00% bytes_per_second=4.19% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):27/manual_time           3336512 ns    385712355 ns          210 bytes=134.218M bytes_per_second=37.4643G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):27/manual_time           3369159 ns    375731436 ns          210 bytes=134.218M bytes_per_second=37.1012G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):27/manual_time           3397897 ns    402907105 ns          210 bytes=134.218M bytes_per_second=36.7875G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):27/manual_time           3461002 ns    391210187 ns          210 bytes=134.218M bytes_per_second=36.1167G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):27/manual_time           3461512 ns    378534318 ns          210 bytes=134.218M bytes_per_second=36.1114G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):27/manual_time_mean      3405216 ns    386819080 ns            5 bytes=134.218M bytes_per_second=36.7162G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):27/manual_time_median    3397897 ns    385712355 ns            5 bytes=134.218M bytes_per_second=36.7875G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):27/manual_time_stddev      55577 ns     10850165 ns            5 bytes=0 bytes_per_second=614.003M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):27/manual_time_cv           1.63 %          2.80 %             5 bytes=0.00% bytes_per_second=1.63% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):28/manual_time           9327202 ns    849555347 ns           69 bytes=268.435M bytes_per_second=26.8033G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):28/manual_time           9284196 ns    713209645 ns           69 bytes=268.435M bytes_per_second=26.9275G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):28/manual_time           9285830 ns    741670062 ns           69 bytes=268.435M bytes_per_second=26.9227G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):28/manual_time           9308141 ns    715843443 ns           69 bytes=268.435M bytes_per_second=26.8582G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):28/manual_time           9238281 ns    749150164 ns           69 bytes=268.435M bytes_per_second=27.0613G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):28/manual_time_mean      9288730 ns    753885732 ns            5 bytes=268.435M bytes_per_second=26.9146G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):28/manual_time_median    9285830 ns    741670062 ns            5 bytes=268.435M bytes_per_second=26.9227G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):28/manual_time_stddev      33283 ns     55736172 ns            5 bytes=0 bytes_per_second=98.9094M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):28/manual_time_cv           0.36 %          7.39 %             5 bytes=0.00% bytes_per_second=0.36% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):29/manual_time          22830803 ns   1655937687 ns           30 bytes=536.871M bytes_per_second=21.9002G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):29/manual_time          22982635 ns   1381108594 ns           30 bytes=536.871M bytes_per_second=21.7556G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):29/manual_time          22703545 ns   1504441189 ns           30 bytes=536.871M bytes_per_second=22.023G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):29/manual_time          22831941 ns   1504764820 ns           30 bytes=536.871M bytes_per_second=21.8991G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):29/manual_time          22634808 ns   1505525483 ns           30 bytes=536.871M bytes_per_second=22.0899G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):29/manual_time_mean     22796746 ns   1510355554 ns            5 bytes=536.871M bytes_per_second=21.9336G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):29/manual_time_median   22830803 ns   1504764820 ns            5 bytes=536.871M bytes_per_second=21.9002G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):29/manual_time_stddev     134037 ns     97453193 ns            5 bytes=0 bytes_per_second=131.945M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):29/manual_time_cv           0.59 %          6.45 %             5 bytes=0.00% bytes_per_second=0.59% dst_numa=-nan% src_gpu=-nan%
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):30/manual_time          50348479 ns   2677031832 ns           13 bytes=1073.74M bytes_per_second=19.8616G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):30/manual_time          50364641 ns   3260842060 ns           13 bytes=1073.74M bytes_per_second=19.8552G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):30/manual_time          50375775 ns   3262408229 ns           13 bytes=1073.74M bytes_per_second=19.8508G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):30/manual_time          50059383 ns   3263541037 ns           13 bytes=1073.74M bytes_per_second=19.9763G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):30/manual_time          50126751 ns   3264115042 ns           13 bytes=1073.74M bytes_per_second=19.9494G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):30/manual_time_mean     50255006 ns   3145587640 ns            5 bytes=1073.74M bytes_per_second=19.8987G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):30/manual_time_median   50348479 ns   3262408229 ns            5 bytes=1073.74M bytes_per_second=19.8616G/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):30/manual_time_stddev     150050 ns    261933639 ns            5 bytes=0 bytes_per_second=60.9155M/s dst_numa=0 src_gpu=0
+Comm_implicit_managed_HostWrGPU_fine/0/0/log2(N):30/manual_time_cv           0.30 %          8.33 %             5 bytes=0.00% bytes_per_second=0.30% dst_numa=-nan% src_gpu=-nan%
+[2023-10-09 22:00:36.165] [scope] [warning] unable to restore turbo state: no permission. (use enable-turbo tool if needed)
+[2023-10-09 22:00:36.165] [scope] [warning] unable to restore CPU governor: no permission. (use set-minimum tool if needed)
+Mon 09 Oct 2023 10:00:36 PM EDT

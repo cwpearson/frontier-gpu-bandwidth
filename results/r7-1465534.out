@@ -1,0 +1,434 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "amd/5.3.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-amd/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+Mon 09 Oct 2023 05:44:30 PM EDT
+Comm|Scope 0.12.0 v0.12.0@124999d
+  scope 1.1.2 HEAD@124999d
+    spdlog 1.6.1
+    benchmark 1.5.1
+[2023-10-09 17:44:32.312] [scope] [info] recorded system CPU turbo state
+[2023-10-09 17:44:32.313] [scope] [info] recorded CPU goveror
+[2023-10-09 17:44:32.313] [scope] [error] unable to disable CPU turbo: no permission. Run with higher privileges?
+[2023-10-09 17:44:32.313] [scope] [error] unable to set OS CPU governor to maximum: no permission. Run with higher privileges?
+2023-10-09T17:44:34-04:00
+Running /lustre/orion/csc465/scratch/cpearson/frontier-gpu-bandwidth/build/comm_scope
+Run on (128 X 1795.42 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x64)
+  L1 Instruction 32 KiB (x64)
+  L2 Unified 512 KiB (x64)
+  L3 Unified 32768 KiB (x8)
+Load Average: 0.40, 3.80, 18.46
+----------------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                  Time             CPU   Iterations UserCounters...
+----------------------------------------------------------------------------------------------------------------------------
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):10/manual_time            199996 ns       277723 ns         3482 bytes=1024 bytes_per_second=4.8829M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):10/manual_time            200650 ns       277790 ns         3482 bytes=1024 bytes_per_second=4.867M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):10/manual_time            200053 ns       277672 ns         3482 bytes=1024 bytes_per_second=4.88151M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):10/manual_time            199943 ns       277657 ns         3482 bytes=1024 bytes_per_second=4.8842M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):10/manual_time            200594 ns       277888 ns         3482 bytes=1024 bytes_per_second=4.86835M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):10/manual_time_mean       200247 ns       277746 ns            5 bytes=1024 bytes_per_second=4.87679M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):10/manual_time_median     200053 ns       277723 ns            5 bytes=1024 bytes_per_second=4.88151M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):10/manual_time_stddev        345 ns         95.1 ns            5 bytes=0 bytes_per_second=8.59454k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):10/manual_time_cv           0.17 %          0.03 %             5 bytes=0.00% bytes_per_second=0.17% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):11/manual_time            200079 ns       277540 ns         3496 bytes=2.048k bytes_per_second=9.76176M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):11/manual_time            200361 ns       277607 ns         3496 bytes=2.048k bytes_per_second=9.74802M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):11/manual_time            199886 ns       277635 ns         3496 bytes=2.048k bytes_per_second=9.7712M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):11/manual_time            200524 ns       278337 ns         3496 bytes=2.048k bytes_per_second=9.74009M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):11/manual_time            199978 ns       277686 ns         3496 bytes=2.048k bytes_per_second=9.76671M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):11/manual_time_mean       200166 ns       277761 ns            5 bytes=2.048k bytes_per_second=9.75756M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):11/manual_time_median     200079 ns       277635 ns            5 bytes=2.048k bytes_per_second=9.76176M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):11/manual_time_stddev        268 ns          326 ns            5 bytes=0 bytes_per_second=13.3859k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):11/manual_time_cv           0.13 %          0.12 %             5 bytes=0.00% bytes_per_second=0.13% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):12/manual_time            199956 ns       277196 ns         3497 bytes=4.096k bytes_per_second=19.5355M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):12/manual_time            200348 ns       277811 ns         3497 bytes=4.096k bytes_per_second=19.4973M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):12/manual_time            200467 ns       277691 ns         3497 bytes=4.096k bytes_per_second=19.4858M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):12/manual_time            199946 ns       277657 ns         3497 bytes=4.096k bytes_per_second=19.5366M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):12/manual_time            199948 ns       277368 ns         3497 bytes=4.096k bytes_per_second=19.5363M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):12/manual_time_mean       200133 ns       277545 ns            5 bytes=4.096k bytes_per_second=19.5183M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):12/manual_time_median     199956 ns       277657 ns            5 bytes=4.096k bytes_per_second=19.5355M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):12/manual_time_stddev        254 ns          254 ns            5 bytes=0 bytes_per_second=25.3614k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):12/manual_time_cv           0.13 %          0.09 %             5 bytes=0.00% bytes_per_second=0.13% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):13/manual_time            201192 ns       279823 ns         3445 bytes=8.192k bytes_per_second=38.831M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):13/manual_time            201114 ns       279673 ns         3445 bytes=8.192k bytes_per_second=38.8461M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):13/manual_time            201474 ns       279593 ns         3445 bytes=8.192k bytes_per_second=38.7766M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):13/manual_time            201081 ns       279776 ns         3445 bytes=8.192k bytes_per_second=38.8525M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):13/manual_time            201119 ns       279791 ns         3445 bytes=8.192k bytes_per_second=38.8452M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):13/manual_time_mean       201196 ns       279731 ns            5 bytes=8.192k bytes_per_second=38.8303M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):13/manual_time_median     201119 ns       279776 ns            5 bytes=8.192k bytes_per_second=38.8452M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):13/manual_time_stddev        161 ns         95.4 ns            5 bytes=0 bytes_per_second=31.7445k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):13/manual_time_cv           0.08 %          0.03 %             5 bytes=0.00% bytes_per_second=0.08% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):14/manual_time            202643 ns       282574 ns         3458 bytes=16.384k bytes_per_second=77.1061M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):14/manual_time            202028 ns       281969 ns         3458 bytes=16.384k bytes_per_second=77.3407M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):14/manual_time            202535 ns       282019 ns         3458 bytes=16.384k bytes_per_second=77.1472M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):14/manual_time            202119 ns       282305 ns         3458 bytes=16.384k bytes_per_second=77.3058M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):14/manual_time            202117 ns       282210 ns         3458 bytes=16.384k bytes_per_second=77.3067M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):14/manual_time_mean       202288 ns       282216 ns            5 bytes=16.384k bytes_per_second=77.2413M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):14/manual_time_median     202119 ns       282210 ns            5 bytes=16.384k bytes_per_second=77.3058M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):14/manual_time_stddev        279 ns          243 ns            5 bytes=0 bytes_per_second=109.133k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):14/manual_time_cv           0.14 %          0.09 %             5 bytes=0.00% bytes_per_second=0.14% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):15/manual_time            205076 ns       288579 ns         3424 bytes=32.768k bytes_per_second=152.383M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):15/manual_time            204637 ns       287047 ns         3424 bytes=32.768k bytes_per_second=152.71M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):15/manual_time            204038 ns       286899 ns         3424 bytes=32.768k bytes_per_second=153.157M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):15/manual_time            204131 ns       287125 ns         3424 bytes=32.768k bytes_per_second=153.088M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):15/manual_time            204721 ns       287134 ns         3424 bytes=32.768k bytes_per_second=152.647M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):15/manual_time_mean       204520 ns       287357 ns            5 bytes=32.768k bytes_per_second=152.797M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):15/manual_time_median     204637 ns       287125 ns            5 bytes=32.768k bytes_per_second=152.71M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):15/manual_time_stddev        432 ns          690 ns            5 bytes=0 bytes_per_second=330.455k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):15/manual_time_cv           0.21 %          0.24 %             5 bytes=0.00% bytes_per_second=0.21% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):16/manual_time            207747 ns       296504 ns         3368 bytes=65.536k bytes_per_second=300.846M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):16/manual_time            208344 ns       296598 ns         3368 bytes=65.536k bytes_per_second=299.984M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):16/manual_time            207711 ns       296068 ns         3368 bytes=65.536k bytes_per_second=300.898M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):16/manual_time            207673 ns       296324 ns         3368 bytes=65.536k bytes_per_second=300.954M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):16/manual_time            208199 ns       296329 ns         3368 bytes=65.536k bytes_per_second=300.194M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):16/manual_time_mean       207935 ns       296365 ns            5 bytes=65.536k bytes_per_second=300.575M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):16/manual_time_median     207747 ns       296329 ns            5 bytes=65.536k bytes_per_second=300.846M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):16/manual_time_stddev        313 ns          203 ns            5 bytes=0 bytes_per_second=462.475k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):16/manual_time_cv           0.15 %          0.07 %             5 bytes=0.00% bytes_per_second=0.15% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):17/manual_time            212733 ns       311804 ns         3290 bytes=131.072k bytes_per_second=587.592M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):17/manual_time            212846 ns       312321 ns         3290 bytes=131.072k bytes_per_second=587.278M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):17/manual_time            212606 ns       311916 ns         3290 bytes=131.072k bytes_per_second=587.943M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):17/manual_time            212656 ns       312287 ns         3290 bytes=131.072k bytes_per_second=587.803M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):17/manual_time            212713 ns       311482 ns         3290 bytes=131.072k bytes_per_second=587.645M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):17/manual_time_mean       212711 ns       311962 ns            5 bytes=131.072k bytes_per_second=587.652M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):17/manual_time_median     212713 ns       311916 ns            5 bytes=131.072k bytes_per_second=587.645M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):17/manual_time_stddev       90.6 ns          351 ns            5 bytes=0 bytes_per_second=256.395k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):17/manual_time_cv           0.04 %          0.11 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):18/manual_time            228506 ns       344365 ns         3045 bytes=262.144k bytes_per_second=1094.06M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):18/manual_time            228873 ns       344757 ns         3045 bytes=262.144k bytes_per_second=1092.31M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):18/manual_time            228649 ns       344312 ns         3045 bytes=262.144k bytes_per_second=1093.38M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):18/manual_time            228991 ns       344848 ns         3045 bytes=262.144k bytes_per_second=1091.75M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):18/manual_time            228465 ns       344342 ns         3045 bytes=262.144k bytes_per_second=1094.26M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):18/manual_time_mean       228697 ns       344525 ns            5 bytes=262.144k bytes_per_second=1093.15M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):18/manual_time_median     228649 ns       344365 ns            5 bytes=262.144k bytes_per_second=1093.38M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):18/manual_time_stddev        229 ns          256 ns            5 bytes=0 bytes_per_second=1121.61k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):18/manual_time_cv           0.10 %          0.07 %             5 bytes=0.00% bytes_per_second=0.10% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):19/manual_time            256763 ns       417101 ns         2722 bytes=524.288k bytes_per_second=1.90168G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):19/manual_time            256798 ns       416398 ns         2722 bytes=524.288k bytes_per_second=1.90142G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):19/manual_time            257090 ns       417306 ns         2722 bytes=524.288k bytes_per_second=1.89926G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):19/manual_time            256155 ns       415732 ns         2722 bytes=524.288k bytes_per_second=1.9062G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):19/manual_time            256654 ns       416333 ns         2722 bytes=524.288k bytes_per_second=1.90249G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):19/manual_time_mean       256692 ns       416574 ns            5 bytes=524.288k bytes_per_second=1.90221G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):19/manual_time_median     256763 ns       416398 ns            5 bytes=524.288k bytes_per_second=1.90168G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):19/manual_time_stddev        341 ns          634 ns            5 bytes=0 bytes_per_second=2.58973M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):19/manual_time_cv           0.13 %          0.15 %             5 bytes=0.00% bytes_per_second=0.13% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):20/manual_time            310930 ns       561263 ns         2250 bytes=1048.58k bytes_per_second=3.14078G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):20/manual_time            311753 ns       562875 ns         2250 bytes=1048.58k bytes_per_second=3.13249G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):20/manual_time            311600 ns       562970 ns         2250 bytes=1048.58k bytes_per_second=3.13403G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):20/manual_time            311333 ns       561970 ns         2250 bytes=1048.58k bytes_per_second=3.13672G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):20/manual_time            310846 ns       560930 ns         2250 bytes=1048.58k bytes_per_second=3.14163G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):20/manual_time_mean       311292 ns       562002 ns            5 bytes=1048.58k bytes_per_second=3.13713G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):20/manual_time_median     311333 ns       561970 ns            5 bytes=1048.58k bytes_per_second=3.13672G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):20/manual_time_stddev        400 ns          921 ns            5 bytes=0 bytes_per_second=4.12563M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):20/manual_time_cv           0.13 %          0.16 %             5 bytes=0.00% bytes_per_second=0.13% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):21/manual_time            424142 ns       851754 ns         1650 bytes=2.09715M bytes_per_second=4.60489G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):21/manual_time            423700 ns       851064 ns         1650 bytes=2.09715M bytes_per_second=4.60969G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):21/manual_time            424015 ns       851996 ns         1650 bytes=2.09715M bytes_per_second=4.60626G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):21/manual_time            424420 ns       852058 ns         1650 bytes=2.09715M bytes_per_second=4.60187G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):21/manual_time            424189 ns       851931 ns         1650 bytes=2.09715M bytes_per_second=4.60437G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):21/manual_time_mean       424093 ns       851761 ns            5 bytes=2.09715M bytes_per_second=4.60542G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):21/manual_time_median     424142 ns       851931 ns            5 bytes=2.09715M bytes_per_second=4.60489G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):21/manual_time_stddev        264 ns          406 ns            5 bytes=0 bytes_per_second=2.93678M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):21/manual_time_cv           0.06 %          0.05 %             5 bytes=0.00% bytes_per_second=0.06% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):22/manual_time            667102 ns      1473592 ns         1049 bytes=4.1943M bytes_per_second=5.85555G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):22/manual_time            667538 ns      1473816 ns         1049 bytes=4.1943M bytes_per_second=5.85173G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):22/manual_time            666577 ns      1473497 ns         1049 bytes=4.1943M bytes_per_second=5.86016G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):22/manual_time            667601 ns      1474445 ns         1049 bytes=4.1943M bytes_per_second=5.85118G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):22/manual_time            667140 ns      1473558 ns         1049 bytes=4.1943M bytes_per_second=5.85522G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):22/manual_time_mean       667192 ns      1473782 ns            5 bytes=4.1943M bytes_per_second=5.85477G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):22/manual_time_median     667140 ns      1473592 ns            5 bytes=4.1943M bytes_per_second=5.85522G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):22/manual_time_stddev        411 ns          390 ns            5 bytes=0 bytes_per_second=3.69211M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):22/manual_time_cv           0.06 %          0.03 %             5 bytes=0.00% bytes_per_second=0.06% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):23/manual_time           1155645 ns      2732343 ns          605 bytes=8.38861M bytes_per_second=6.76029G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):23/manual_time           1158448 ns      2727449 ns          605 bytes=8.38861M bytes_per_second=6.74394G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):23/manual_time           1154708 ns      2730412 ns          605 bytes=8.38861M bytes_per_second=6.76578G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):23/manual_time           1155234 ns      2732382 ns          605 bytes=8.38861M bytes_per_second=6.7627G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):23/manual_time           1153364 ns      2727263 ns          605 bytes=8.38861M bytes_per_second=6.77367G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):23/manual_time_mean      1155480 ns      2729970 ns            5 bytes=8.38861M bytes_per_second=6.76128G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):23/manual_time_median    1155234 ns      2730412 ns            5 bytes=8.38861M bytes_per_second=6.7627G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):23/manual_time_stddev       1869 ns         2516 ns            5 bytes=0 bytes_per_second=11.1868M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):23/manual_time_cv           0.16 %          0.09 %             5 bytes=0.00% bytes_per_second=0.16% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):24/manual_time           2172881 ns      5347177 ns          321 bytes=16.7772M bytes_per_second=7.19091G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):24/manual_time           2174735 ns      5350254 ns          321 bytes=16.7772M bytes_per_second=7.18478G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):24/manual_time           2183086 ns      5356541 ns          321 bytes=16.7772M bytes_per_second=7.1573G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):24/manual_time           2174613 ns      5347350 ns          321 bytes=16.7772M bytes_per_second=7.18518G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):24/manual_time           2173049 ns      5349198 ns          321 bytes=16.7772M bytes_per_second=7.19036G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):24/manual_time_mean      2175673 ns      5350104 ns            5 bytes=16.7772M bytes_per_second=7.18171G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):24/manual_time_median    2174613 ns      5349198 ns            5 bytes=16.7772M bytes_per_second=7.18518G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):24/manual_time_stddev       4232 ns         3822 ns            5 bytes=0 bytes_per_second=14.2713M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):24/manual_time_cv           0.19 %          0.07 %             5 bytes=0.00% bytes_per_second=0.19% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):25/manual_time           4204809 ns     10809165 ns          163 bytes=33.5544M bytes_per_second=7.43197G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):25/manual_time           4190270 ns     10771673 ns          163 bytes=33.5544M bytes_per_second=7.45775G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):25/manual_time           4208690 ns     10800487 ns          163 bytes=33.5544M bytes_per_second=7.42511G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):25/manual_time           4233257 ns     10855466 ns          163 bytes=33.5544M bytes_per_second=7.38202G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):25/manual_time           4180116 ns     10756252 ns          163 bytes=33.5544M bytes_per_second=7.47587G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):25/manual_time_mean      4203429 ns     10798609 ns            5 bytes=33.5544M bytes_per_second=7.43454G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):25/manual_time_median    4204809 ns     10800487 ns            5 bytes=33.5544M bytes_per_second=7.43197G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):25/manual_time_stddev      20223 ns        38299 ns            5 bytes=0 bytes_per_second=36.5658M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):25/manual_time_cv           0.48 %          0.35 %             5 bytes=0.00% bytes_per_second=0.48% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):26/manual_time           8988264 ns     23019243 ns           77 bytes=67.1089M bytes_per_second=6.95351G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):26/manual_time           8999044 ns     23022153 ns           77 bytes=67.1089M bytes_per_second=6.94518G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):26/manual_time           8986167 ns     22993757 ns           77 bytes=67.1089M bytes_per_second=6.95513G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):26/manual_time           8988378 ns     23032328 ns           77 bytes=67.1089M bytes_per_second=6.95342G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):26/manual_time           8982543 ns     22970113 ns           77 bytes=67.1089M bytes_per_second=6.95794G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):26/manual_time_mean      8988879 ns     23007519 ns            5 bytes=67.1089M bytes_per_second=6.95304G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):26/manual_time_median    8988264 ns     23019243 ns            5 bytes=67.1089M bytes_per_second=6.95351G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):26/manual_time_stddev       6153 ns        25277 ns            5 bytes=0 bytes_per_second=4.87122M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):26/manual_time_cv           0.07 %          0.11 %             5 bytes=0.00% bytes_per_second=0.07% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):27/manual_time          16993940 ns     43404790 ns           41 bytes=134.218M bytes_per_second=7.35556G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):27/manual_time          17013928 ns     43434386 ns           41 bytes=134.218M bytes_per_second=7.34692G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):27/manual_time          17009924 ns     43432133 ns           41 bytes=134.218M bytes_per_second=7.34865G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):27/manual_time          17003844 ns     43413431 ns           41 bytes=134.218M bytes_per_second=7.35128G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):27/manual_time          17002989 ns     43393069 ns           41 bytes=134.218M bytes_per_second=7.35165G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):27/manual_time_mean     17004925 ns     43415562 ns            5 bytes=134.218M bytes_per_second=7.35081G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):27/manual_time_median   17003844 ns     43413431 ns            5 bytes=134.218M bytes_per_second=7.35128G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):27/manual_time_stddev       7610 ns        17716 ns            5 bytes=0 bytes_per_second=3.36887M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):27/manual_time_cv           0.04 %          0.04 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):28/manual_time          32920341 ns     83824041 ns           21 bytes=268.435M bytes_per_second=7.59409G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):28/manual_time          32898315 ns     83822345 ns           21 bytes=268.435M bytes_per_second=7.59917G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):28/manual_time          32950391 ns     83804190 ns           21 bytes=268.435M bytes_per_second=7.58716G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):28/manual_time          32877286 ns     83823741 ns           21 bytes=268.435M bytes_per_second=7.60403G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):28/manual_time          33011016 ns     83963997 ns           21 bytes=268.435M bytes_per_second=7.57323G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):28/manual_time_mean     32931470 ns     83847663 ns            5 bytes=268.435M bytes_per_second=7.59154G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):28/manual_time_median   32920341 ns     83823741 ns            5 bytes=268.435M bytes_per_second=7.59409G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):28/manual_time_stddev      52069 ns        65565 ns            5 bytes=0 bytes_per_second=12.2805M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):28/manual_time_cv           0.16 %          0.08 %             5 bytes=0.00% bytes_per_second=0.16% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):29/manual_time          65180983 ns    164643161 ns           10 bytes=536.871M bytes_per_second=7.67095G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):29/manual_time          65075768 ns    164564410 ns           10 bytes=536.871M bytes_per_second=7.68335G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):29/manual_time          64986294 ns    164350736 ns           10 bytes=536.871M bytes_per_second=7.69393G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):29/manual_time          64945159 ns    164359111 ns           10 bytes=536.871M bytes_per_second=7.6988G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):29/manual_time          65094536 ns    164514284 ns           10 bytes=536.871M bytes_per_second=7.68114G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):29/manual_time_mean     65056548 ns    164486340 ns            5 bytes=536.871M bytes_per_second=7.68563G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):29/manual_time_median   65075768 ns    164514284 ns            5 bytes=536.871M bytes_per_second=7.68335G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):29/manual_time_stddev      93059 ns       128495 ns            5 bytes=0 bytes_per_second=11.2563M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):29/manual_time_cv           0.14 %          0.08 %             5 bytes=0.00% bytes_per_second=0.14% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):30/manual_time         141545585 ns    318507417 ns            5 bytes=1073.74M bytes_per_second=7.06486G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):30/manual_time         141671637 ns    318519215 ns            5 bytes=1073.74M bytes_per_second=7.05858G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):30/manual_time         141563731 ns    318307099 ns            5 bytes=1073.74M bytes_per_second=7.06396G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):30/manual_time         141662574 ns    318863186 ns            5 bytes=1073.74M bytes_per_second=7.05903G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):30/manual_time         141622743 ns    318616878 ns            5 bytes=1073.74M bytes_per_second=7.06101G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):30/manual_time_mean    141613254 ns    318562759 ns            5 bytes=1073.74M bytes_per_second=7.06149G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):30/manual_time_median  141622743 ns    318519215 ns            5 bytes=1073.74M bytes_per_second=7.06101G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):30/manual_time_stddev      56927 ns       202180 ns            5 bytes=0 bytes_per_second=2.90693M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_GPUToHost/0/0/log2(N):30/manual_time_cv           0.04 %          0.06 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+[2023-10-09 17:47:38.525] [scope] [warning] unable to restore turbo state: no permission. (use enable-turbo tool if needed)
+[2023-10-09 17:47:38.525] [scope] [warning] unable to restore CPU governor: no permission. (use set-minimum tool if needed)
+Comm|Scope 0.12.0 v0.12.0@124999d
+  scope 1.1.2 HEAD@124999d
+    spdlog 1.6.1
+    benchmark 1.5.1
+[2023-10-09 17:47:38.698] [scope] [info] recorded system CPU turbo state
+[2023-10-09 17:47:38.698] [scope] [info] recorded CPU goveror
+[2023-10-09 17:47:38.698] [scope] [error] unable to disable CPU turbo: no permission. Run with higher privileges?
+[2023-10-09 17:47:38.698] [scope] [error] unable to set OS CPU governor to maximum: no permission. Run with higher privileges?
+2023-10-09T17:47:41-04:00
+Running /lustre/orion/csc465/scratch/cpearson/frontier-gpu-bandwidth/build/comm_scope
+Run on (128 X 1744.5 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x64)
+  L1 Instruction 32 KiB (x64)
+  L2 Unified 512 KiB (x64)
+  L3 Unified 32768 KiB (x8)
+Load Average: 1.90, 3.00, 15.50
+----------------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                  Time             CPU   Iterations UserCounters...
+----------------------------------------------------------------------------------------------------------------------------
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):10/manual_time             76772 ns       278832 ns         9239 bytes=1024 bytes_per_second=12.7202M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):10/manual_time             76585 ns       278457 ns         9239 bytes=1024 bytes_per_second=12.7514M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):10/manual_time             76530 ns       278253 ns         9239 bytes=1024 bytes_per_second=12.7605M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):10/manual_time             76379 ns       278527 ns         9239 bytes=1024 bytes_per_second=12.7857M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):10/manual_time             76532 ns       278518 ns         9239 bytes=1024 bytes_per_second=12.7602M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):10/manual_time_mean        76560 ns       278518 ns            5 bytes=1024 bytes_per_second=12.7556M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):10/manual_time_median      76532 ns       278518 ns            5 bytes=1024 bytes_per_second=12.7602M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):10/manual_time_stddev        141 ns          208 ns            5 bytes=0 bytes_per_second=24.1128k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):10/manual_time_cv           0.18 %          0.07 %             5 bytes=0.00% bytes_per_second=0.18% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):11/manual_time             76799 ns       278600 ns         9042 bytes=2.048k bytes_per_second=25.4316M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):11/manual_time             76706 ns       278655 ns         9042 bytes=2.048k bytes_per_second=25.4625M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):11/manual_time             76635 ns       278201 ns         9042 bytes=2.048k bytes_per_second=25.486M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):11/manual_time             76804 ns       278581 ns         9042 bytes=2.048k bytes_per_second=25.43M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):11/manual_time             76510 ns       278519 ns         9042 bytes=2.048k bytes_per_second=25.5277M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):11/manual_time_mean        76691 ns       278511 ns            5 bytes=2.048k bytes_per_second=25.4675M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):11/manual_time_median      76706 ns       278581 ns            5 bytes=2.048k bytes_per_second=25.4625M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):11/manual_time_stddev        123 ns          180 ns            5 bytes=0 bytes_per_second=41.8676k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):11/manual_time_cv           0.16 %          0.06 %             5 bytes=0.00% bytes_per_second=0.16% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):12/manual_time             76405 ns       278285 ns         9261 bytes=4.096k bytes_per_second=51.1257M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):12/manual_time             76600 ns       278465 ns         9261 bytes=4.096k bytes_per_second=50.9956M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):12/manual_time             76695 ns       278369 ns         9261 bytes=4.096k bytes_per_second=50.9321M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):12/manual_time             76731 ns       278468 ns         9261 bytes=4.096k bytes_per_second=50.9083M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):12/manual_time             76551 ns       278277 ns         9261 bytes=4.096k bytes_per_second=51.0281M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):12/manual_time_mean        76596 ns       278373 ns            5 bytes=4.096k bytes_per_second=50.998M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):12/manual_time_median      76600 ns       278369 ns            5 bytes=4.096k bytes_per_second=50.9956M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):12/manual_time_stddev        129 ns         92.9 ns            5 bytes=0 bytes_per_second=88.0661k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):12/manual_time_cv           0.17 %          0.03 %             5 bytes=0.00% bytes_per_second=0.17% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):13/manual_time             77365 ns       280189 ns         9178 bytes=8.192k bytes_per_second=100.982M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):13/manual_time             77558 ns       280500 ns         9178 bytes=8.192k bytes_per_second=100.73M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):13/manual_time             77301 ns       280022 ns         9178 bytes=8.192k bytes_per_second=101.066M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):13/manual_time             77401 ns       280315 ns         9178 bytes=8.192k bytes_per_second=100.936M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):13/manual_time             77276 ns       280105 ns         9178 bytes=8.192k bytes_per_second=101.098M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):13/manual_time_mean        77380 ns       280226 ns            5 bytes=8.192k bytes_per_second=100.963M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):13/manual_time_median      77365 ns       280189 ns            5 bytes=8.192k bytes_per_second=100.982M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):13/manual_time_stddev        111 ns          187 ns            5 bytes=0 bytes_per_second=148.531k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):13/manual_time_cv           0.14 %          0.07 %             5 bytes=0.00% bytes_per_second=0.14% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):14/manual_time             78649 ns       282805 ns         8980 bytes=16.384k bytes_per_second=198.669M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):14/manual_time             78579 ns       282627 ns         8980 bytes=16.384k bytes_per_second=198.844M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):14/manual_time             78843 ns       282970 ns         8980 bytes=16.384k bytes_per_second=198.178M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):14/manual_time             78925 ns       283064 ns         8980 bytes=16.384k bytes_per_second=197.972M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):14/manual_time             78945 ns       282851 ns         8980 bytes=16.384k bytes_per_second=197.924M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):14/manual_time_mean        78788 ns       282864 ns            5 bytes=16.384k bytes_per_second=198.317M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):14/manual_time_median      78843 ns       282851 ns            5 bytes=16.384k bytes_per_second=198.178M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):14/manual_time_stddev        165 ns          167 ns            5 bytes=0 bytes_per_second=426.75k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):14/manual_time_cv           0.21 %          0.06 %             5 bytes=0.00% bytes_per_second=0.21% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):15/manual_time             81663 ns       287880 ns         8510 bytes=32.768k bytes_per_second=382.668M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):15/manual_time             81434 ns       287665 ns         8510 bytes=32.768k bytes_per_second=383.749M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):15/manual_time             81430 ns       287686 ns         8510 bytes=32.768k bytes_per_second=383.765M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):15/manual_time             81539 ns       287535 ns         8510 bytes=32.768k bytes_per_second=383.251M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):15/manual_time             81335 ns       287574 ns         8510 bytes=32.768k bytes_per_second=384.215M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):15/manual_time_mean        81480 ns       287668 ns            5 bytes=32.768k bytes_per_second=383.53M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):15/manual_time_median      81434 ns       287665 ns            5 bytes=32.768k bytes_per_second=383.749M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):15/manual_time_stddev        125 ns          134 ns            5 bytes=0 bytes_per_second=604.149k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):15/manual_time_cv           0.15 %          0.05 %             5 bytes=0.00% bytes_per_second=0.15% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):16/manual_time             86327 ns       296062 ns         8191 bytes=65.536k bytes_per_second=723.993M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):16/manual_time             86294 ns       296033 ns         8191 bytes=65.536k bytes_per_second=724.271M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):16/manual_time             86335 ns       295946 ns         8191 bytes=65.536k bytes_per_second=723.926M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):16/manual_time             86250 ns       295756 ns         8191 bytes=65.536k bytes_per_second=724.637M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):16/manual_time             86276 ns       296049 ns         8191 bytes=65.536k bytes_per_second=724.42M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):16/manual_time_mean        86296 ns       295969 ns            5 bytes=65.536k bytes_per_second=724.249M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):16/manual_time_median      86294 ns       296033 ns            5 bytes=65.536k bytes_per_second=724.271M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):16/manual_time_stddev       35.2 ns          127 ns            5 bytes=0 bytes_per_second=302.897k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):16/manual_time_cv           0.04 %          0.04 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):17/manual_time             94309 ns       311630 ns         7191 bytes=131.072k bytes_per_second=1.29437G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):17/manual_time             94474 ns       311750 ns         7191 bytes=131.072k bytes_per_second=1.2921G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):17/manual_time             97115 ns       311590 ns         7191 bytes=131.072k bytes_per_second=1.25696G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):17/manual_time             94511 ns       311752 ns         7191 bytes=131.072k bytes_per_second=1.2916G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):17/manual_time             94445 ns       311738 ns         7191 bytes=131.072k bytes_per_second=1.2925G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):17/manual_time_mean        94971 ns       311692 ns            5 bytes=131.072k bytes_per_second=1.28551G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):17/manual_time_median      94474 ns       311738 ns            5 bytes=131.072k bytes_per_second=1.2921G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):17/manual_time_stddev       1201 ns         76.5 ns            5 bytes=0 bytes_per_second=16.3748M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):17/manual_time_cv           1.26 %          0.02 %             5 bytes=0.00% bytes_per_second=1.24% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):18/manual_time            115056 ns       345957 ns         6088 bytes=262.144k bytes_per_second=2.12193G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):18/manual_time            115091 ns       345791 ns         6088 bytes=262.144k bytes_per_second=2.12128G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):18/manual_time            114937 ns       345555 ns         6088 bytes=262.144k bytes_per_second=2.12413G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):18/manual_time            115045 ns       345503 ns         6088 bytes=262.144k bytes_per_second=2.12213G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):18/manual_time            115137 ns       345971 ns         6088 bytes=262.144k bytes_per_second=2.12044G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):18/manual_time_mean       115053 ns       345755 ns            5 bytes=262.144k bytes_per_second=2.12198G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):18/manual_time_median     115056 ns       345791 ns            5 bytes=262.144k bytes_per_second=2.12193G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):18/manual_time_stddev       74.3 ns          219 ns            5 bytes=0 bytes_per_second=1.40464M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):18/manual_time_cv           0.06 %          0.06 %             5 bytes=0.00% bytes_per_second=0.06% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):19/manual_time            159436 ns       417965 ns         4419 bytes=524.288k bytes_per_second=3.06255G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):19/manual_time            159286 ns       417843 ns         4419 bytes=524.288k bytes_per_second=3.06544G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):19/manual_time            159368 ns       417575 ns         4419 bytes=524.288k bytes_per_second=3.06386G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):19/manual_time            159328 ns       417511 ns         4419 bytes=524.288k bytes_per_second=3.06462G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):19/manual_time            159841 ns       418549 ns         4419 bytes=524.288k bytes_per_second=3.0548G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):19/manual_time_mean       159452 ns       417889 ns            5 bytes=524.288k bytes_per_second=3.06225G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):19/manual_time_median     159368 ns       417843 ns            5 bytes=524.288k bytes_per_second=3.06386G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):19/manual_time_stddev        224 ns          414 ns            5 bytes=0 bytes_per_second=4.40233M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):19/manual_time_cv           0.14 %          0.10 %             5 bytes=0.00% bytes_per_second=0.14% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):20/manual_time            250611 ns       564123 ns         2822 bytes=1048.58k bytes_per_second=3.89673G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):20/manual_time            247867 ns       564164 ns         2822 bytes=1048.58k bytes_per_second=3.93986G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):20/manual_time            250532 ns       564208 ns         2822 bytes=1048.58k bytes_per_second=3.89795G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):20/manual_time            247845 ns       564034 ns         2822 bytes=1048.58k bytes_per_second=3.94022G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):20/manual_time            250555 ns       564024 ns         2822 bytes=1048.58k bytes_per_second=3.8976G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):20/manual_time_mean       249482 ns       564110 ns            5 bytes=1048.58k bytes_per_second=3.91447G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):20/manual_time_median     250532 ns       564123 ns            5 bytes=1048.58k bytes_per_second=3.89795G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):20/manual_time_stddev       1485 ns         80.3 ns            5 bytes=0 bytes_per_second=23.905M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):20/manual_time_cv           0.60 %          0.01 %             5 bytes=0.00% bytes_per_second=0.60% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):21/manual_time            427869 ns       854476 ns         1637 bytes=2.09715M bytes_per_second=4.56477G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):21/manual_time            428125 ns       854698 ns         1637 bytes=2.09715M bytes_per_second=4.56204G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):21/manual_time            428488 ns       855197 ns         1637 bytes=2.09715M bytes_per_second=4.55817G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):21/manual_time            427887 ns       854128 ns         1637 bytes=2.09715M bytes_per_second=4.56458G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):21/manual_time            428141 ns       854318 ns         1637 bytes=2.09715M bytes_per_second=4.56188G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):21/manual_time_mean       428102 ns       854564 ns            5 bytes=2.09715M bytes_per_second=4.56229G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):21/manual_time_median     428125 ns       854476 ns            5 bytes=2.09715M bytes_per_second=4.56204G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):21/manual_time_stddev        251 ns          411 ns            5 bytes=0 bytes_per_second=2.73786M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):21/manual_time_cv           0.06 %          0.05 %             5 bytes=0.00% bytes_per_second=0.06% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):22/manual_time            807061 ns      1475443 ns          867 bytes=4.1943M bytes_per_second=4.84009G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):22/manual_time            807193 ns      1476032 ns          867 bytes=4.1943M bytes_per_second=4.8393G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):22/manual_time            806957 ns      1475212 ns          867 bytes=4.1943M bytes_per_second=4.84072G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):22/manual_time            807206 ns      1476170 ns          867 bytes=4.1943M bytes_per_second=4.83922G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):22/manual_time            807334 ns      1475655 ns          867 bytes=4.1943M bytes_per_second=4.83846G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):22/manual_time_mean       807150 ns      1475702 ns            5 bytes=4.1943M bytes_per_second=4.83956G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):22/manual_time_median     807193 ns      1475655 ns            5 bytes=4.1943M bytes_per_second=4.8393G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):22/manual_time_stddev        145 ns          399 ns            5 bytes=0 bytes_per_second=911.893k/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):22/manual_time_cv           0.02 %          0.03 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):23/manual_time           1575980 ns      2729735 ns          444 bytes=8.38861M bytes_per_second=4.95723G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):23/manual_time           1577158 ns      2735197 ns          444 bytes=8.38861M bytes_per_second=4.95353G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):23/manual_time           1580035 ns      2736844 ns          444 bytes=8.38861M bytes_per_second=4.94451G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):23/manual_time           1577732 ns      2737107 ns          444 bytes=8.38861M bytes_per_second=4.95173G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):23/manual_time           1580360 ns      2736941 ns          444 bytes=8.38861M bytes_per_second=4.94349G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):23/manual_time_mean      1578253 ns      2735165 ns            5 bytes=8.38861M bytes_per_second=4.9501G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):23/manual_time_median    1577732 ns      2736844 ns            5 bytes=8.38861M bytes_per_second=4.95173G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):23/manual_time_stddev       1887 ns         3131 ns            5 bytes=0 bytes_per_second=6.06148M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):23/manual_time_cv           0.12 %          0.11 %             5 bytes=0.00% bytes_per_second=0.12% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):24/manual_time           3173115 ns      5344197 ns          220 bytes=16.7772M bytes_per_second=4.92418G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):24/manual_time           3182228 ns      5364157 ns          220 bytes=16.7772M bytes_per_second=4.91008G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):24/manual_time           3172605 ns      5345182 ns          220 bytes=16.7772M bytes_per_second=4.92497G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):24/manual_time           3173060 ns      5346755 ns          220 bytes=16.7772M bytes_per_second=4.92427G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):24/manual_time           3173764 ns      5346094 ns          220 bytes=16.7772M bytes_per_second=4.92318G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):24/manual_time_mean      3174954 ns      5349277 ns            5 bytes=16.7772M bytes_per_second=4.92134G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):24/manual_time_median    3173115 ns      5346094 ns            5 bytes=16.7772M bytes_per_second=4.92418G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):24/manual_time_stddev       4087 ns         8374 ns            5 bytes=0 bytes_per_second=6.47642M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):24/manual_time_cv           0.13 %          0.16 %             5 bytes=0.00% bytes_per_second=0.13% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):25/manual_time           6710074 ns     10978727 ns          102 bytes=33.5544M bytes_per_second=4.65718G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):25/manual_time           6590351 ns     10749629 ns          102 bytes=33.5544M bytes_per_second=4.74178G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):25/manual_time           6790222 ns     11144646 ns          102 bytes=33.5544M bytes_per_second=4.60221G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):25/manual_time           6693872 ns     10958121 ns          102 bytes=33.5544M bytes_per_second=4.66845G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):25/manual_time           6654882 ns     10872203 ns          102 bytes=33.5544M bytes_per_second=4.6958G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):25/manual_time_mean      6687880 ns     10940665 ns            5 bytes=33.5544M bytes_per_second=4.67308G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):25/manual_time_median    6693872 ns     10958121 ns            5 bytes=33.5544M bytes_per_second=4.66845G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):25/manual_time_stddev      73490 ns       145381 ns            5 bytes=0 bytes_per_second=52.5481M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):25/manual_time_cv           1.10 %          1.33 %             5 bytes=0.00% bytes_per_second=1.10% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):26/manual_time          14027418 ns     22831178 ns           51 bytes=67.1089M bytes_per_second=4.45556G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):26/manual_time          14021498 ns     22821029 ns           51 bytes=67.1089M bytes_per_second=4.45744G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):26/manual_time          14020209 ns     22810221 ns           51 bytes=67.1089M bytes_per_second=4.45785G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):26/manual_time          13984701 ns     22771878 ns           51 bytes=67.1089M bytes_per_second=4.46917G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):26/manual_time          14006904 ns     22796106 ns           51 bytes=67.1089M bytes_per_second=4.46209G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):26/manual_time_mean     14012146 ns     22806082 ns            5 bytes=67.1089M bytes_per_second=4.46042G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):26/manual_time_median   14020209 ns     22810221 ns            5 bytes=67.1089M bytes_per_second=4.45785G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):26/manual_time_stddev      17076 ns        23129 ns            5 bytes=0 bytes_per_second=5.57174M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):26/manual_time_cv           0.12 %          0.10 %             5 bytes=0.00% bytes_per_second=0.12% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):27/manual_time          26351949 ns     42719198 ns           27 bytes=134.218M bytes_per_second=4.74348G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):27/manual_time          26401040 ns     42821852 ns           27 bytes=134.218M bytes_per_second=4.73466G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):27/manual_time          26381698 ns     42738681 ns           27 bytes=134.218M bytes_per_second=4.73813G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):27/manual_time          26398586 ns     42747790 ns           27 bytes=134.218M bytes_per_second=4.7351G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):27/manual_time          26385704 ns     42732626 ns           27 bytes=134.218M bytes_per_second=4.73741G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):27/manual_time_mean     26383795 ns     42752029 ns            5 bytes=134.218M bytes_per_second=4.73776G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):27/manual_time_median   26385704 ns     42738681 ns            5 bytes=134.218M bytes_per_second=4.73741G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):27/manual_time_stddev      19611 ns        40391 ns            5 bytes=0 bytes_per_second=3.60819M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):27/manual_time_cv           0.07 %          0.09 %             5 bytes=0.00% bytes_per_second=0.07% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):28/manual_time          50603139 ns     80306016 ns           10 bytes=268.435M bytes_per_second=4.9404G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):28/manual_time          50435475 ns     80080427 ns           10 bytes=268.435M bytes_per_second=4.95683G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):28/manual_time          50612308 ns     80219879 ns           10 bytes=268.435M bytes_per_second=4.93951G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):28/manual_time          50526370 ns     80143898 ns           10 bytes=268.435M bytes_per_second=4.94791G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):28/manual_time          50460274 ns     80097572 ns           10 bytes=268.435M bytes_per_second=4.95439G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):28/manual_time_mean     50527513 ns     80169558 ns            5 bytes=268.435M bytes_per_second=4.94781G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):28/manual_time_median   50526370 ns     80143898 ns            5 bytes=268.435M bytes_per_second=4.94791G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):28/manual_time_stddev      80472 ns        93458 ns            5 bytes=0 bytes_per_second=8.06944M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):28/manual_time_cv           0.16 %          0.12 %             5 bytes=0.00% bytes_per_second=0.16% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):29/manual_time          99050653 ns    156039621 ns            8 bytes=536.871M bytes_per_second=5.04792G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):29/manual_time          99029912 ns    155947654 ns            8 bytes=536.871M bytes_per_second=5.04898G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):29/manual_time          98958233 ns    156041481 ns            8 bytes=536.871M bytes_per_second=5.05264G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):29/manual_time          99049472 ns    156145311 ns            8 bytes=536.871M bytes_per_second=5.04798G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):29/manual_time          98944511 ns    156013351 ns            8 bytes=536.871M bytes_per_second=5.05334G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):29/manual_time_mean     99006556 ns    156037483 ns            5 bytes=536.871M bytes_per_second=5.05017G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):29/manual_time_median   99029912 ns    156039621 ns            5 bytes=536.871M bytes_per_second=5.04898G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):29/manual_time_stddev      51275 ns        71237 ns            5 bytes=0 bytes_per_second=2.67867M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):29/manual_time_cv           0.05 %          0.05 %             5 bytes=0.00% bytes_per_second=0.05% hip_id=-nan% numa_id=-nan%
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):30/manual_time         176006086 ns    282514937 ns            4 bytes=1073.74M bytes_per_second=5.68162G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):30/manual_time         176396493 ns    282857366 ns            4 bytes=1073.74M bytes_per_second=5.66905G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):30/manual_time         176149722 ns    282453645 ns            4 bytes=1073.74M bytes_per_second=5.67699G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):30/manual_time         176305447 ns    282722920 ns            4 bytes=1073.74M bytes_per_second=5.67197G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):30/manual_time         176194366 ns    282943784 ns            4 bytes=1073.74M bytes_per_second=5.67555G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):30/manual_time_mean    176210423 ns    282698530 ns            5 bytes=1073.74M bytes_per_second=5.67504G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):30/manual_time_median  176194366 ns    282722920 ns            5 bytes=1073.74M bytes_per_second=5.67555G/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):30/manual_time_stddev     149455 ns       211925 ns            5 bytes=0 bytes_per_second=4.92934M/s hip_id=0 numa_id=0
+Comm_prefetch_managed_HostToGPU/0/0/log2(N):30/manual_time_cv           0.08 %          0.07 %             5 bytes=0.00% bytes_per_second=0.08% hip_id=-nan% numa_id=-nan%
+[2023-10-09 17:51:28.132] [scope] [warning] unable to restore turbo state: no permission. (use enable-turbo tool if needed)
+[2023-10-09 17:51:28.132] [scope] [warning] unable to restore CPU governor: no permission. (use set-minimum tool if needed)
+Mon 09 Oct 2023 05:51:28 PM EDT

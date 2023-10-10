@@ -1,0 +1,699 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "amd/5.3.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-amd/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+Mon 09 Oct 2023 05:38:26 PM EDT
+Comm|Scope 0.12.0 v0.12.0@124999d
+  scope 1.1.2 HEAD@124999d
+    spdlog 1.6.1
+    benchmark 1.5.1
+[2023-10-09 17:38:26.962] [scope] [info] recorded system CPU turbo state
+[2023-10-09 17:38:26.963] [scope] [info] recorded CPU goveror
+[2023-10-09 17:38:26.963] [scope] [error] unable to disable CPU turbo: no permission. Run with higher privileges?
+[2023-10-09 17:38:26.963] [scope] [error] unable to set OS CPU governor to maximum: no permission. Run with higher privileges?
+2023-10-09T17:38:29-04:00
+Running /lustre/orion/csc465/scratch/cpearson/frontier-gpu-bandwidth/build/comm_scope
+Run on (128 X 1870.01 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x64)
+  L1 Instruction 32 KiB (x64)
+  L2 Unified 512 KiB (x64)
+  L3 Unified 32768 KiB (x8)
+Load Average: 0.31, 11.54, 26.80
+----------------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                  Time             CPU   Iterations UserCounters...
+----------------------------------------------------------------------------------------------------------------------------
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):8/manual_time              13094 ns        19976 ns        53295 bytes=256 bytes_per_second=18.6447M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):8/manual_time              13044 ns        19867 ns        53295 bytes=256 bytes_per_second=18.716M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):8/manual_time              13009 ns        19804 ns        53295 bytes=256 bytes_per_second=18.7676M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):8/manual_time              13033 ns        19849 ns        53295 bytes=256 bytes_per_second=18.7326M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):8/manual_time              13045 ns        19857 ns        53295 bytes=256 bytes_per_second=18.7158M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):8/manual_time_mean         13045 ns        19871 ns            5 bytes=256 bytes_per_second=18.7154M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):8/manual_time_median       13044 ns        19857 ns            5 bytes=256 bytes_per_second=18.716M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):8/manual_time_stddev        31.3 ns         63.4 ns            5 bytes=0 bytes_per_second=45.8469k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):8/manual_time_cv            0.24 %          0.32 %             5 bytes=0.00% bytes_per_second=0.24% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):9/manual_time              12986 ns        19807 ns        53884 bytes=512 bytes_per_second=37.6007M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):9/manual_time              13013 ns        19893 ns        53884 bytes=512 bytes_per_second=37.5216M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):9/manual_time              13060 ns        19917 ns        53884 bytes=512 bytes_per_second=37.3885M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):9/manual_time              13010 ns        19864 ns        53884 bytes=512 bytes_per_second=37.5324M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):9/manual_time              13073 ns        19900 ns        53884 bytes=512 bytes_per_second=37.3517M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):9/manual_time_mean         13028 ns        19876 ns            5 bytes=512 bytes_per_second=37.479M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):9/manual_time_median       13013 ns        19893 ns            5 bytes=512 bytes_per_second=37.5216M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):9/manual_time_stddev        36.4 ns         43.1 ns            5 bytes=0 bytes_per_second=107.231k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):9/manual_time_cv            0.28 %          0.22 %             5 bytes=0.00% bytes_per_second=0.28% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):10/manual_time             13116 ns        19937 ns        53587 bytes=1024 bytes_per_second=74.4559M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):10/manual_time             13093 ns        19929 ns        53587 bytes=1024 bytes_per_second=74.5861M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):10/manual_time             13170 ns        20019 ns        53587 bytes=1024 bytes_per_second=74.1531M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):10/manual_time             13078 ns        19926 ns        53587 bytes=1024 bytes_per_second=74.673M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):10/manual_time             13064 ns        19903 ns        53587 bytes=1024 bytes_per_second=74.7499M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):10/manual_time_mean        13104 ns        19943 ns            5 bytes=1024 bytes_per_second=74.5236M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):10/manual_time_median      13093 ns        19929 ns            5 bytes=1024 bytes_per_second=74.5861M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):10/manual_time_stddev       41.3 ns         44.5 ns            5 bytes=0 bytes_per_second=239.773k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):10/manual_time_cv           0.31 %          0.22 %             5 bytes=0.00% bytes_per_second=0.31% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):11/manual_time             13206 ns        20105 ns        52954 bytes=2.048k bytes_per_second=147.895M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):11/manual_time             13212 ns        20140 ns        52954 bytes=2.048k bytes_per_second=147.826M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):11/manual_time             13279 ns        20244 ns        52954 bytes=2.048k bytes_per_second=147.086M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):11/manual_time             13235 ns        20189 ns        52954 bytes=2.048k bytes_per_second=147.574M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):11/manual_time             13207 ns        20173 ns        52954 bytes=2.048k bytes_per_second=147.884M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):11/manual_time_mean        13228 ns        20170 ns            5 bytes=2.048k bytes_per_second=147.653M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):11/manual_time_median      13212 ns        20173 ns            5 bytes=2.048k bytes_per_second=147.826M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):11/manual_time_stddev       30.8 ns         52.5 ns            5 bytes=0 bytes_per_second=350.823k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):11/manual_time_cv           0.23 %          0.26 %             5 bytes=0.00% bytes_per_second=0.23% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):12/manual_time             13469 ns        20487 ns        52173 bytes=4.096k bytes_per_second=290.008M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):12/manual_time             13473 ns        20464 ns        52173 bytes=4.096k bytes_per_second=289.934M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):12/manual_time             13387 ns        20455 ns        52173 bytes=4.096k bytes_per_second=291.804M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):12/manual_time             13486 ns        20540 ns        52173 bytes=4.096k bytes_per_second=289.642M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):12/manual_time             13433 ns        20478 ns        52173 bytes=4.096k bytes_per_second=290.802M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):12/manual_time_mean        13450 ns        20485 ns            5 bytes=4.096k bytes_per_second=290.438M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):12/manual_time_median      13469 ns        20478 ns            5 bytes=4.096k bytes_per_second=290.008M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):12/manual_time_stddev       40.5 ns         33.3 ns            5 bytes=0 bytes_per_second=897.233k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):12/manual_time_cv           0.30 %          0.16 %             5 bytes=0.00% bytes_per_second=0.30% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):13/manual_time             13685 ns        21007 ns        51470 bytes=8.192k bytes_per_second=570.883M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):13/manual_time             13607 ns        20974 ns        51470 bytes=8.192k bytes_per_second=574.173M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):13/manual_time             13673 ns        21114 ns        51470 bytes=8.192k bytes_per_second=571.383M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):13/manual_time             13620 ns        20996 ns        51470 bytes=8.192k bytes_per_second=573.625M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):13/manual_time             13615 ns        20981 ns        51470 bytes=8.192k bytes_per_second=573.814M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):13/manual_time_mean        13640 ns        21014 ns            5 bytes=8.192k bytes_per_second=572.776M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):13/manual_time_median      13620 ns        20996 ns            5 bytes=8.192k bytes_per_second=573.625M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):13/manual_time_stddev       36.3 ns         57.3 ns            5 bytes=0 bytes_per_second=1.52257M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):13/manual_time_cv           0.27 %          0.27 %             5 bytes=0.00% bytes_per_second=0.27% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):14/manual_time             13922 ns        21786 ns        50185 bytes=16.384k bytes_per_second=1122.3M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):14/manual_time             13933 ns        21865 ns        50185 bytes=16.384k bytes_per_second=1121.44M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):14/manual_time             13950 ns        21886 ns        50185 bytes=16.384k bytes_per_second=1120.05M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):14/manual_time             13928 ns        21823 ns        50185 bytes=16.384k bytes_per_second=1121.86M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):14/manual_time             13937 ns        21890 ns        50185 bytes=16.384k bytes_per_second=1121.16M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):14/manual_time_mean        13934 ns        21850 ns            5 bytes=16.384k bytes_per_second=1121.36M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):14/manual_time_median      13933 ns        21865 ns            5 bytes=16.384k bytes_per_second=1121.44M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):14/manual_time_stddev       10.6 ns         44.5 ns            5 bytes=0 bytes_per_second=871.26k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):14/manual_time_cv           0.08 %          0.20 %             5 bytes=0.00% bytes_per_second=0.08% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):15/manual_time             14713 ns        23046 ns        47768 bytes=32.768k bytes_per_second=2.07415G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):15/manual_time             14674 ns        23000 ns        47768 bytes=32.768k bytes_per_second=2.07977G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):15/manual_time             14703 ns        23000 ns        47768 bytes=32.768k bytes_per_second=2.07565G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):15/manual_time             14712 ns        23075 ns        47768 bytes=32.768k bytes_per_second=2.07427G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):15/manual_time             14717 ns        23075 ns        47768 bytes=32.768k bytes_per_second=2.07358G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):15/manual_time_mean        14704 ns        23039 ns            5 bytes=32.768k bytes_per_second=2.07549G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):15/manual_time_median      14712 ns        23046 ns            5 bytes=32.768k bytes_per_second=2.07427G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):15/manual_time_stddev       17.8 ns         37.9 ns            5 bytes=0 bytes_per_second=2.57407M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):15/manual_time_cv           0.12 %          0.16 %             5 bytes=0.00% bytes_per_second=0.12% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):16/manual_time             16063 ns        26595 ns        43396 bytes=65.536k bytes_per_second=3.79973G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):16/manual_time             16137 ns        26739 ns        43396 bytes=65.536k bytes_per_second=3.78222G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):16/manual_time             16297 ns        26916 ns        43396 bytes=65.536k bytes_per_second=3.74508G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):16/manual_time             16249 ns        26767 ns        43396 bytes=65.536k bytes_per_second=3.75635G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):16/manual_time             16245 ns        26825 ns        43396 bytes=65.536k bytes_per_second=3.75706G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):16/manual_time_mean        16198 ns        26768 ns            5 bytes=65.536k bytes_per_second=3.76809G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):16/manual_time_median      16245 ns        26767 ns            5 bytes=65.536k bytes_per_second=3.75706G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):16/manual_time_stddev       95.6 ns          118 ns            5 bytes=0 bytes_per_second=22.8388M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):16/manual_time_cv           0.59 %          0.44 %             5 bytes=0.00% bytes_per_second=0.59% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):17/manual_time             19851 ns        33693 ns        35403 bytes=131.072k bytes_per_second=6.14938G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):17/manual_time             19820 ns        33694 ns        35403 bytes=131.072k bytes_per_second=6.15883G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):17/manual_time             19866 ns        33712 ns        35403 bytes=131.072k bytes_per_second=6.14483G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):17/manual_time             19854 ns        33787 ns        35403 bytes=131.072k bytes_per_second=6.14844G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):17/manual_time             19791 ns        33818 ns        35403 bytes=131.072k bytes_per_second=6.16785G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):17/manual_time_mean        19836 ns        33741 ns            5 bytes=131.072k bytes_per_second=6.15387G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):17/manual_time_median      19851 ns        33712 ns            5 bytes=131.072k bytes_per_second=6.14938G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):17/manual_time_stddev       30.2 ns         58.0 ns            5 bytes=0 bytes_per_second=9.59847M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):17/manual_time_cv           0.15 %          0.17 %             5 bytes=0.00% bytes_per_second=0.15% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):18/manual_time             23716 ns        49230 ns        29531 bytes=262.144k bytes_per_second=10.2944G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):18/manual_time             23682 ns        49083 ns        29531 bytes=262.144k bytes_per_second=10.3093G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):18/manual_time             23726 ns        49274 ns        29531 bytes=262.144k bytes_per_second=10.2898G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):18/manual_time             23684 ns        49069 ns        29531 bytes=262.144k bytes_per_second=10.3084G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):18/manual_time             23787 ns        49355 ns        29531 bytes=262.144k bytes_per_second=10.2637G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):18/manual_time_mean        23719 ns        49202 ns            5 bytes=262.144k bytes_per_second=10.2931G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):18/manual_time_median      23716 ns        49230 ns            5 bytes=262.144k bytes_per_second=10.2944G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):18/manual_time_stddev       42.7 ns          124 ns            5 bytes=0 bytes_per_second=18.9665M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):18/manual_time_cv           0.18 %          0.25 %             5 bytes=0.00% bytes_per_second=0.18% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):19/manual_time             34268 ns        74301 ns        20412 bytes=524.288k bytes_per_second=14.2491G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):19/manual_time             34279 ns        74268 ns        20412 bytes=524.288k bytes_per_second=14.2441G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):19/manual_time             34264 ns        74306 ns        20412 bytes=524.288k bytes_per_second=14.2505G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):19/manual_time             34245 ns        74113 ns        20412 bytes=524.288k bytes_per_second=14.2585G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):19/manual_time             34309 ns        74030 ns        20412 bytes=524.288k bytes_per_second=14.2321G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):19/manual_time_mean        34273 ns        74204 ns            5 bytes=524.288k bytes_per_second=14.2468G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):19/manual_time_median      34268 ns        74268 ns            5 bytes=524.288k bytes_per_second=14.2491G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):19/manual_time_stddev       23.4 ns          125 ns            5 bytes=0 bytes_per_second=9.96899M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):19/manual_time_cv           0.07 %          0.17 %             5 bytes=0.00% bytes_per_second=0.07% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):20/manual_time             55171 ns       124796 ns        12719 bytes=1048.58k bytes_per_second=17.7005G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):20/manual_time             55151 ns       125408 ns        12719 bytes=1048.58k bytes_per_second=17.7069G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):20/manual_time             55150 ns       124745 ns        12719 bytes=1048.58k bytes_per_second=17.7073G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):20/manual_time             55181 ns       124830 ns        12719 bytes=1048.58k bytes_per_second=17.6974G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):20/manual_time             55150 ns       124885 ns        12719 bytes=1048.58k bytes_per_second=17.7075G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):20/manual_time_mean        55161 ns       124933 ns            5 bytes=1048.58k bytes_per_second=17.7039G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):20/manual_time_median      55151 ns       124830 ns            5 bytes=1048.58k bytes_per_second=17.7069G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):20/manual_time_stddev       14.6 ns          270 ns            5 bytes=0 bytes_per_second=4.78152M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):20/manual_time_cv           0.03 %          0.22 %             5 bytes=0.00% bytes_per_second=0.03% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):21/manual_time             97566 ns       223926 ns         7181 bytes=2.09715M bytes_per_second=20.0186G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):21/manual_time             97576 ns       223477 ns         7181 bytes=2.09715M bytes_per_second=20.0165G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):21/manual_time             97522 ns       223558 ns         7181 bytes=2.09715M bytes_per_second=20.0274G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):21/manual_time             97560 ns       224240 ns         7181 bytes=2.09715M bytes_per_second=20.0197G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):21/manual_time             97555 ns       223578 ns         7181 bytes=2.09715M bytes_per_second=20.0207G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):21/manual_time_mean        97556 ns       223756 ns            5 bytes=2.09715M bytes_per_second=20.0206G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):21/manual_time_median      97560 ns       223578 ns            5 bytes=2.09715M bytes_per_second=20.0197G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):21/manual_time_stddev       20.2 ns          321 ns            5 bytes=0 bytes_per_second=4.24073M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):21/manual_time_cv           0.02 %          0.14 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):22/manual_time            183853 ns       424592 ns         3808 bytes=4.1943M bytes_per_second=21.2466G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):22/manual_time            183853 ns       416206 ns         3808 bytes=4.1943M bytes_per_second=21.2466G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):22/manual_time            183859 ns       424705 ns         3808 bytes=4.1943M bytes_per_second=21.246G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):22/manual_time            183826 ns       415632 ns         3808 bytes=4.1943M bytes_per_second=21.2497G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):22/manual_time            183822 ns       425789 ns         3808 bytes=4.1943M bytes_per_second=21.2502G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):22/manual_time_mean       183842 ns       421385 ns            5 bytes=4.1943M bytes_per_second=21.2478G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):22/manual_time_median     183853 ns       424592 ns            5 bytes=4.1943M bytes_per_second=21.2466G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):22/manual_time_stddev       17.0 ns         5015 ns            5 bytes=0 bytes_per_second=2.00892M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):22/manual_time_cv           0.01 %          1.19 %             5 bytes=0.00% bytes_per_second=0.01% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):23/manual_time            350899 ns       814807 ns         1994 bytes=8.38861M bytes_per_second=22.2642G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):23/manual_time            351026 ns       817287 ns         1994 bytes=8.38861M bytes_per_second=22.2562G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):23/manual_time            350895 ns       816732 ns         1994 bytes=8.38861M bytes_per_second=22.2645G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):23/manual_time            350995 ns       815937 ns         1994 bytes=8.38861M bytes_per_second=22.2582G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):23/manual_time            350886 ns       818923 ns         1994 bytes=8.38861M bytes_per_second=22.2651G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):23/manual_time_mean       350940 ns       816737 ns            5 bytes=8.38861M bytes_per_second=22.2616G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):23/manual_time_median     350899 ns       816732 ns            5 bytes=8.38861M bytes_per_second=22.2642G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):23/manual_time_stddev       65.2 ns         1537 ns            5 bytes=0 bytes_per_second=4.23738M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):23/manual_time_cv           0.02 %          0.19 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):24/manual_time            684281 ns      1758992 ns         1024 bytes=16.7772M bytes_per_second=22.8342G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):24/manual_time            684315 ns      1758863 ns         1024 bytes=16.7772M bytes_per_second=22.8331G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):24/manual_time            683682 ns      1755736 ns         1024 bytes=16.7772M bytes_per_second=22.8542G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):24/manual_time            683249 ns      1755853 ns         1024 bytes=16.7772M bytes_per_second=22.8687G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):24/manual_time            684243 ns      1758898 ns         1024 bytes=16.7772M bytes_per_second=22.8355G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):24/manual_time_mean       683954 ns      1757668 ns            5 bytes=16.7772M bytes_per_second=22.8451G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):24/manual_time_median     684243 ns      1758863 ns            5 bytes=16.7772M bytes_per_second=22.8355G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):24/manual_time_stddev        472 ns         1712 ns            5 bytes=0 bytes_per_second=16.1549M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):24/manual_time_cv           0.07 %          0.10 %             5 bytes=0.00% bytes_per_second=0.07% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):25/manual_time           1349319 ns      3142541 ns          519 bytes=33.5544M bytes_per_second=23.1598G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):25/manual_time           1348503 ns      3478213 ns          519 bytes=33.5544M bytes_per_second=23.1739G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):25/manual_time           1349006 ns      3126719 ns          519 bytes=33.5544M bytes_per_second=23.1652G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):25/manual_time           1349700 ns      3149121 ns          519 bytes=33.5544M bytes_per_second=23.1533G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):25/manual_time           1348667 ns      3145609 ns          519 bytes=33.5544M bytes_per_second=23.171G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):25/manual_time_mean      1349039 ns      3208440 ns            5 bytes=33.5544M bytes_per_second=23.1646G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):25/manual_time_median    1349006 ns      3145609 ns            5 bytes=33.5544M bytes_per_second=23.1652G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):25/manual_time_stddev        485 ns       151050 ns            5 bytes=0 bytes_per_second=8.53154M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):25/manual_time_cv           0.04 %          4.71 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):26/manual_time           2682878 ns      6955818 ns          261 bytes=67.1089M bytes_per_second=23.2959G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):26/manual_time           2682082 ns      6518743 ns          261 bytes=67.1089M bytes_per_second=23.3028G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):26/manual_time           2683255 ns      6936557 ns          261 bytes=67.1089M bytes_per_second=23.2926G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):26/manual_time           2681785 ns      6912890 ns          261 bytes=67.1089M bytes_per_second=23.3054G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):26/manual_time           2682430 ns      6507981 ns          261 bytes=67.1089M bytes_per_second=23.2998G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):26/manual_time_mean      2682486 ns      6766398 ns            5 bytes=67.1089M bytes_per_second=23.2993G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):26/manual_time_median    2682430 ns      6912890 ns            5 bytes=67.1089M bytes_per_second=23.2998G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):26/manual_time_stddev        592 ns       231520 ns            5 bytes=0 bytes_per_second=5.26721M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):26/manual_time_cv           0.02 %          3.42 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):27/manual_time           5347196 ns     13903035 ns          131 bytes=134.218M bytes_per_second=23.3767G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):27/manual_time           5347307 ns     13278818 ns          131 bytes=134.218M bytes_per_second=23.3763G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):27/manual_time           5347190 ns     13882453 ns          131 bytes=134.218M bytes_per_second=23.3768G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):27/manual_time           5347965 ns     13921217 ns          131 bytes=134.218M bytes_per_second=23.3734G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):27/manual_time           5347498 ns     13167056 ns          131 bytes=134.218M bytes_per_second=23.3754G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):27/manual_time_mean      5347431 ns     13630516 ns            5 bytes=134.218M bytes_per_second=23.3757G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):27/manual_time_median    5347307 ns     13882453 ns            5 bytes=134.218M bytes_per_second=23.3763G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):27/manual_time_stddev        324 ns       374410 ns            5 bytes=0 bytes_per_second=1.44803M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):27/manual_time_cv           0.01 %          2.75 %             5 bytes=0.00% bytes_per_second=0.01% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):28/manual_time          10677597 ns     27944244 ns           66 bytes=268.435M bytes_per_second=23.4135G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):28/manual_time          10677307 ns     27815454 ns           66 bytes=268.435M bytes_per_second=23.4141G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):28/manual_time          10677421 ns     27772872 ns           66 bytes=268.435M bytes_per_second=23.4139G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):28/manual_time          10677106 ns     27833697 ns           66 bytes=268.435M bytes_per_second=23.4146G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):28/manual_time          10677377 ns     26676423 ns           66 bytes=268.435M bytes_per_second=23.414G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):28/manual_time_mean     10677361 ns     27608538 ns            5 bytes=268.435M bytes_per_second=23.414G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):28/manual_time_median   10677377 ns     27815454 ns            5 bytes=268.435M bytes_per_second=23.414G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):28/manual_time_stddev        179 ns       524894 ns            5 bytes=0 bytes_per_second=411.165k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):28/manual_time_cv           0.00 %          1.90 %             5 bytes=0.00% bytes_per_second=0.00% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):29/manual_time          21336098 ns     54960439 ns           33 bytes=536.871M bytes_per_second=23.4345G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):29/manual_time          21336389 ns     55733433 ns           33 bytes=536.871M bytes_per_second=23.4341G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):29/manual_time          21337068 ns     55899188 ns           33 bytes=536.871M bytes_per_second=23.4334G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):29/manual_time          21337029 ns     55846746 ns           33 bytes=536.871M bytes_per_second=23.4334G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):29/manual_time          21336370 ns     56326899 ns           33 bytes=536.871M bytes_per_second=23.4342G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):29/manual_time_mean     21336591 ns     55753341 ns            5 bytes=536.871M bytes_per_second=23.4339G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):29/manual_time_median   21336389 ns     55846746 ns            5 bytes=536.871M bytes_per_second=23.4341G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):29/manual_time_stddev        434 ns       497004 ns            5 bytes=0 bytes_per_second=499.311k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):29/manual_time_cv           0.00 %          0.89 %             5 bytes=0.00% bytes_per_second=0.00% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):30/manual_time          42656070 ns    112111599 ns           16 bytes=1073.74M bytes_per_second=23.4433G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):30/manual_time          42656331 ns    112606852 ns           16 bytes=1073.74M bytes_per_second=23.4432G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):30/manual_time          42656330 ns    112561541 ns           16 bytes=1073.74M bytes_per_second=23.4432G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):30/manual_time          42655881 ns    112489074 ns           16 bytes=1073.74M bytes_per_second=23.4434G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):30/manual_time          42655841 ns    112337935 ns           16 bytes=1073.74M bytes_per_second=23.4434G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):30/manual_time_mean     42656090 ns    112421400 ns            5 bytes=1073.74M bytes_per_second=23.4433G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):30/manual_time_median   42656070 ns    112489074 ns            5 bytes=1073.74M bytes_per_second=23.4433G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):30/manual_time_stddev        236 ns       200970 ns            5 bytes=0 bytes_per_second=135.818k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPinned/0/0/log2(N):30/manual_time_cv           0.00 %          0.18 %             5 bytes=0.00% bytes_per_second=0.00% hip_id=-nan% numa_id=-nan%
+[2023-10-09 17:41:26.732] [scope] [warning] unable to restore turbo state: no permission. (use enable-turbo tool if needed)
+[2023-10-09 17:41:26.732] [scope] [warning] unable to restore CPU governor: no permission. (use set-minimum tool if needed)
+Comm|Scope 0.12.0 v0.12.0@124999d
+  scope 1.1.2 HEAD@124999d
+    spdlog 1.6.1
+    benchmark 1.5.1
+[2023-10-09 17:41:26.865] [scope] [info] recorded system CPU turbo state
+[2023-10-09 17:41:26.866] [scope] [info] recorded CPU goveror
+[2023-10-09 17:41:26.866] [scope] [error] unable to disable CPU turbo: no permission. Run with higher privileges?
+[2023-10-09 17:41:26.866] [scope] [error] unable to set OS CPU governor to maximum: no permission. Run with higher privileges?
+2023-10-09T17:41:29-04:00
+Running /lustre/orion/csc465/scratch/cpearson/frontier-gpu-bandwidth/build/comm_scope
+Run on (128 X 1795.86 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x64)
+  L1 Instruction 32 KiB (x64)
+  L2 Unified 512 KiB (x64)
+  L3 Unified 32768 KiB (x8)
+Load Average: 1.53, 7.18, 22.42
+----------------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                  Time             CPU   Iterations UserCounters...
+----------------------------------------------------------------------------------------------------------------------------
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):8/manual_time              12985 ns    545889676 ns        53841 bytes=256 bytes_per_second=18.8015M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):8/manual_time              12825 ns    540897992 ns        53841 bytes=256 bytes_per_second=19.0367M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):8/manual_time              12807 ns    540264717 ns        53841 bytes=256 bytes_per_second=19.0629M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):8/manual_time              12785 ns    539621377 ns        53841 bytes=256 bytes_per_second=19.0958M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):8/manual_time              12777 ns    539520836 ns        53841 bytes=256 bytes_per_second=19.1071M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):8/manual_time_mean         12836 ns    541238920 ns            5 bytes=256 bytes_per_second=19.0208M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):8/manual_time_median       12807 ns    540264717 ns            5 bytes=256 bytes_per_second=19.0629M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):8/manual_time_stddev        85.5 ns      2658152 ns            5 bytes=0 bytes_per_second=128.694k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):8/manual_time_cv            0.67 %          0.49 %             5 bytes=0.00% bytes_per_second=0.66% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):9/manual_time              12779 ns    545589341 ns        54750 bytes=512 bytes_per_second=38.2098M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):9/manual_time              12853 ns    550846379 ns        54750 bytes=512 bytes_per_second=37.9897M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):9/manual_time              12785 ns    547686358 ns        54750 bytes=512 bytes_per_second=38.191M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):9/manual_time              12833 ns    549130353 ns        54750 bytes=512 bytes_per_second=38.0475M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):9/manual_time              12848 ns    549773092 ns        54750 bytes=512 bytes_per_second=38.0041M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):9/manual_time_mean         12820 ns    548605104 ns            5 bytes=512 bytes_per_second=38.0884M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):9/manual_time_median       12833 ns    549130353 ns            5 bytes=512 bytes_per_second=38.0475M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):9/manual_time_stddev        35.2 ns      2037297 ns            5 bytes=0 bytes_per_second=107.117k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):9/manual_time_cv            0.27 %          0.37 %             5 bytes=0.00% bytes_per_second=0.27% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):10/manual_time             12893 ns    546588341 ns        54509 bytes=1024 bytes_per_second=75.7432M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):10/manual_time             12813 ns    539875394 ns        54509 bytes=1024 bytes_per_second=76.2184M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):10/manual_time             12812 ns    543569957 ns        54509 bytes=1024 bytes_per_second=76.2204M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):10/manual_time             12821 ns    544262445 ns        54509 bytes=1024 bytes_per_second=76.1662M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):10/manual_time             12849 ns    544787867 ns        54509 bytes=1024 bytes_per_second=76.0004M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):10/manual_time_mean        12838 ns    543816801 ns            5 bytes=1024 bytes_per_second=76.0697M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):10/manual_time_median      12821 ns    544262445 ns            5 bytes=1024 bytes_per_second=76.1662M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):10/manual_time_stddev       34.4 ns      2470760 ns            5 bytes=0 bytes_per_second=208.333k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):10/manual_time_cv           0.27 %          0.45 %             5 bytes=0.00% bytes_per_second=0.27% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):11/manual_time             12828 ns    545727740 ns        54620 bytes=2.048k bytes_per_second=152.259M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):11/manual_time             12841 ns    546423250 ns        54620 bytes=2.048k bytes_per_second=152.102M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):11/manual_time             12939 ns    551229068 ns        54620 bytes=2.048k bytes_per_second=150.948M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):11/manual_time             12907 ns    546008924 ns        54620 bytes=2.048k bytes_per_second=151.325M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):11/manual_time             12915 ns    546485442 ns        54620 bytes=2.048k bytes_per_second=151.233M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):11/manual_time_mean        12886 ns    547174885 ns            5 bytes=2.048k bytes_per_second=151.573M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):11/manual_time_median      12907 ns    546423250 ns            5 bytes=2.048k bytes_per_second=151.325M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):11/manual_time_stddev       48.8 ns      2287487 ns            5 bytes=0 bytes_per_second=587.788k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):11/manual_time_cv           0.38 %          0.42 %             5 bytes=0.00% bytes_per_second=0.38% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):12/manual_time             12926 ns    544189094 ns        53998 bytes=4.096k bytes_per_second=302.191M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):12/manual_time             12955 ns    544867435 ns        53998 bytes=4.096k bytes_per_second=301.527M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):12/manual_time             12948 ns    545611488 ns        53998 bytes=4.096k bytes_per_second=301.696M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):12/manual_time             12938 ns    544035703 ns        53998 bytes=4.096k bytes_per_second=301.926M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):12/manual_time             12927 ns    544282256 ns        53998 bytes=4.096k bytes_per_second=302.176M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):12/manual_time_mean        12939 ns    544597195 ns            5 bytes=4.096k bytes_per_second=301.903M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):12/manual_time_median      12938 ns    544282256 ns            5 bytes=4.096k bytes_per_second=301.926M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):12/manual_time_stddev       12.5 ns       648619 ns            5 bytes=0 bytes_per_second=299.727k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):12/manual_time_cv           0.10 %          0.12 %             5 bytes=0.00% bytes_per_second=0.10% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):13/manual_time             13086 ns    548141565 ns        53454 bytes=8.192k bytes_per_second=596.998M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):13/manual_time             13084 ns    547150345 ns        53454 bytes=8.192k bytes_per_second=597.106M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):13/manual_time             13082 ns    543214252 ns        53454 bytes=8.192k bytes_per_second=597.197M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):13/manual_time             13038 ns    545802693 ns        53454 bytes=8.192k bytes_per_second=599.214M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):13/manual_time             13111 ns    547435518 ns        53454 bytes=8.192k bytes_per_second=595.866M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):13/manual_time_mean        13080 ns    546348875 ns            5 bytes=8.192k bytes_per_second=597.276M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):13/manual_time_median      13084 ns    547150345 ns            5 bytes=8.192k bytes_per_second=597.106M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):13/manual_time_stddev       26.5 ns      1946861 ns            5 bytes=0 bytes_per_second=1.21019M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):13/manual_time_cv           0.20 %          0.36 %             5 bytes=0.00% bytes_per_second=0.20% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):14/manual_time             13429 ns    541291598 ns        52056 bytes=16.384k bytes_per_second=1.13624G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):14/manual_time             13449 ns    544402303 ns        52056 bytes=16.384k bytes_per_second=1.13454G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):14/manual_time             13505 ns    541428141 ns        52056 bytes=16.384k bytes_per_second=1.12982G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):14/manual_time             13444 ns    541774994 ns        52056 bytes=16.384k bytes_per_second=1.13502G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):14/manual_time             13433 ns    541507021 ns        52056 bytes=16.384k bytes_per_second=1.13596G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):14/manual_time_mean        13452 ns    542080811 ns            5 bytes=16.384k bytes_per_second=1.13432G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):14/manual_time_median      13444 ns    541507021 ns            5 bytes=16.384k bytes_per_second=1.13502G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):14/manual_time_stddev       31.0 ns      1309668 ns            5 bytes=0 bytes_per_second=2.66848M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):14/manual_time_cv           0.23 %          0.24 %             5 bytes=0.00% bytes_per_second=0.23% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):15/manual_time             14088 ns    535168158 ns        49753 bytes=32.768k bytes_per_second=2.1662G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):15/manual_time             14077 ns    537280524 ns        49753 bytes=32.768k bytes_per_second=2.16786G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):15/manual_time             14182 ns    537145649 ns        49753 bytes=32.768k bytes_per_second=2.15192G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):15/manual_time             14070 ns    535424721 ns        49753 bytes=32.768k bytes_per_second=2.16899G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):15/manual_time             14092 ns    534686914 ns        49753 bytes=32.768k bytes_per_second=2.16559G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):15/manual_time_mean        14102 ns    535941193 ns            5 bytes=32.768k bytes_per_second=2.16411G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):15/manual_time_median      14088 ns    535424721 ns            5 bytes=32.768k bytes_per_second=2.1662G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):15/manual_time_stddev       45.5 ns      1191854 ns            5 bytes=0 bytes_per_second=7.11647M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):15/manual_time_cv           0.32 %          0.22 %             5 bytes=0.00% bytes_per_second=0.32% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):16/manual_time             16604 ns    525011229 ns        43073 bytes=65.536k bytes_per_second=3.67591G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):16/manual_time             16408 ns    517299050 ns        43073 bytes=65.536k bytes_per_second=3.71975G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):16/manual_time             16472 ns    520311959 ns        43073 bytes=65.536k bytes_per_second=3.70528G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):16/manual_time             16297 ns    515492066 ns        43073 bytes=65.536k bytes_per_second=3.74509G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):16/manual_time             16456 ns    518010125 ns        43073 bytes=65.536k bytes_per_second=3.70888G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):16/manual_time_mean        16448 ns    519224886 ns            5 bytes=65.536k bytes_per_second=3.71098G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):16/manual_time_median      16456 ns    518010125 ns            5 bytes=65.536k bytes_per_second=3.70888G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):16/manual_time_stddev        111 ns      3666808 ns            5 bytes=0 bytes_per_second=25.636M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):16/manual_time_cv           0.67 %          0.71 %             5 bytes=0.00% bytes_per_second=0.67% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):17/manual_time             19963 ns    495744894 ns        35050 bytes=131.072k bytes_per_second=6.11495G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):17/manual_time             19974 ns    496546936 ns        35050 bytes=131.072k bytes_per_second=6.11157G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):17/manual_time             19959 ns    495529356 ns        35050 bytes=131.072k bytes_per_second=6.11601G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):17/manual_time             19976 ns    496188006 ns        35050 bytes=131.072k bytes_per_second=6.11082G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):17/manual_time             19979 ns    496622039 ns        35050 bytes=131.072k bytes_per_second=6.10978G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):17/manual_time_mean        19970 ns    496126246 ns            5 bytes=131.072k bytes_per_second=6.11263G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):17/manual_time_median      19974 ns    496188006 ns            5 bytes=131.072k bytes_per_second=6.11157G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):17/manual_time_stddev       8.84 ns       481745 ns            5 bytes=0 bytes_per_second=2.77256M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):17/manual_time_cv           0.04 %          0.10 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):18/manual_time             23051 ns    505399413 ns        30354 bytes=262.144k bytes_per_second=10.5915G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):18/manual_time             23073 ns    506113904 ns        30354 bytes=262.144k bytes_per_second=10.5814G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):18/manual_time             23077 ns    506863614 ns        30354 bytes=262.144k bytes_per_second=10.5792G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):18/manual_time             23068 ns    507592180 ns        30354 bytes=262.144k bytes_per_second=10.5836G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):18/manual_time             23066 ns    507622877 ns        30354 bytes=262.144k bytes_per_second=10.5845G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):18/manual_time_mean        23067 ns    506718398 ns            5 bytes=262.144k bytes_per_second=10.584G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):18/manual_time_median      23068 ns    506863614 ns            5 bytes=262.144k bytes_per_second=10.5836G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):18/manual_time_stddev       10.2 ns       962782 ns            5 bytes=0 bytes_per_second=4.78403M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):18/manual_time_cv           0.04 %          0.19 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):19/manual_time             33942 ns    510052060 ns        20558 bytes=524.288k bytes_per_second=14.3858G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):19/manual_time             34056 ns    509168109 ns        20558 bytes=524.288k bytes_per_second=14.3378G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):19/manual_time             34076 ns    510743686 ns        20558 bytes=524.288k bytes_per_second=14.3293G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):19/manual_time             34023 ns    510464610 ns        20558 bytes=524.288k bytes_per_second=14.3516G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):19/manual_time             34020 ns    510233609 ns        20558 bytes=524.288k bytes_per_second=14.3526G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):19/manual_time_mean        34023 ns    510132415 ns            5 bytes=524.288k bytes_per_second=14.3514G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):19/manual_time_median      34023 ns    510233609 ns            5 bytes=524.288k bytes_per_second=14.3516G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):19/manual_time_stddev       51.1 ns       598036 ns            5 bytes=0 bytes_per_second=22.088M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):19/manual_time_cv           0.15 %          0.12 %             5 bytes=0.00% bytes_per_second=0.15% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):20/manual_time             54873 ns    525119636 ns        12697 bytes=1048.58k bytes_per_second=17.7966G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):20/manual_time             54700 ns    524454800 ns        12697 bytes=1048.58k bytes_per_second=17.8532G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):20/manual_time             54970 ns    526177828 ns        12697 bytes=1048.58k bytes_per_second=17.7653G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):20/manual_time             54874 ns    525092378 ns        12697 bytes=1048.58k bytes_per_second=17.7964G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):20/manual_time             54879 ns    525181196 ns        12697 bytes=1048.58k bytes_per_second=17.7949G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):20/manual_time_mean        54859 ns    525205168 ns            5 bytes=1048.58k bytes_per_second=17.8013G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):20/manual_time_median      54874 ns    525119636 ns            5 bytes=1048.58k bytes_per_second=17.7964G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):20/manual_time_stddev       98.2 ns       618412 ns            5 bytes=0 bytes_per_second=32.6833M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):20/manual_time_cv           0.18 %          0.12 %             5 bytes=0.00% bytes_per_second=0.18% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):21/manual_time             96021 ns    502518711 ns         7256 bytes=2.09715M bytes_per_second=20.3406G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):21/manual_time             96101 ns    503040536 ns         7256 bytes=2.09715M bytes_per_second=20.3236G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):21/manual_time             96058 ns    502274878 ns         7256 bytes=2.09715M bytes_per_second=20.3328G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):21/manual_time             95859 ns    501648311 ns         7256 bytes=2.09715M bytes_per_second=20.375G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):21/manual_time             95841 ns    502003653 ns         7256 bytes=2.09715M bytes_per_second=20.3787G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):21/manual_time_mean        95976 ns    502297218 ns            5 bytes=2.09715M bytes_per_second=20.3502G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):21/manual_time_median      96021 ns    502274878 ns            5 bytes=2.09715M bytes_per_second=20.3406G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):21/manual_time_stddev        119 ns       526626 ns            5 bytes=0 bytes_per_second=25.7621M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):21/manual_time_cv           0.12 %          0.10 %             5 bytes=0.00% bytes_per_second=0.12% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):22/manual_time            181244 ns    487970791 ns         3852 bytes=4.1943M bytes_per_second=21.5524G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):22/manual_time            181815 ns    478957347 ns         3852 bytes=4.1943M bytes_per_second=21.4848G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):22/manual_time            181307 ns    488515856 ns         3852 bytes=4.1943M bytes_per_second=21.545G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):22/manual_time            181784 ns    479324361 ns         3852 bytes=4.1943M bytes_per_second=21.4884G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):22/manual_time            181330 ns    488078043 ns         3852 bytes=4.1943M bytes_per_second=21.5422G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):22/manual_time_mean       181496 ns    484569279 ns            5 bytes=4.1943M bytes_per_second=21.5225G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):22/manual_time_median     181330 ns    487970791 ns            5 bytes=4.1943M bytes_per_second=21.5422G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):22/manual_time_stddev        279 ns      4961353 ns            5 bytes=0 bytes_per_second=33.8574M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):22/manual_time_cv           0.15 %          1.02 %             5 bytes=0.00% bytes_per_second=0.15% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):23/manual_time            349182 ns    476862865 ns         2004 bytes=8.38861M bytes_per_second=22.3737G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):23/manual_time            349160 ns    475804956 ns         2004 bytes=8.38861M bytes_per_second=22.3751G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):23/manual_time            349264 ns    477081262 ns         2004 bytes=8.38861M bytes_per_second=22.3685G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):23/manual_time            349349 ns    476975411 ns         2004 bytes=8.38861M bytes_per_second=22.363G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):23/manual_time            349269 ns    477300840 ns         2004 bytes=8.38861M bytes_per_second=22.3682G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):23/manual_time_mean       349245 ns    476805067 ns            5 bytes=8.38861M bytes_per_second=22.3697G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):23/manual_time_median     349264 ns    476975411 ns            5 bytes=8.38861M bytes_per_second=22.3685G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):23/manual_time_stddev       75.6 ns       581948 ns            5 bytes=0 bytes_per_second=4.95836M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):23/manual_time_cv           0.02 %          0.12 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):24/manual_time            681828 ns    482101483 ns         1026 bytes=16.7772M bytes_per_second=22.9163G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):24/manual_time            681485 ns    481354780 ns         1026 bytes=16.7772M bytes_per_second=22.9279G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):24/manual_time            681808 ns    481496086 ns         1026 bytes=16.7772M bytes_per_second=22.917G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):24/manual_time            681748 ns    481717586 ns         1026 bytes=16.7772M bytes_per_second=22.919G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):24/manual_time            681863 ns    481539157 ns         1026 bytes=16.7772M bytes_per_second=22.9152G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):24/manual_time_mean       681746 ns    481641818 ns            5 bytes=16.7772M bytes_per_second=22.9191G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):24/manual_time_median     681808 ns    481539157 ns            5 bytes=16.7772M bytes_per_second=22.917G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):24/manual_time_stddev        152 ns       287750 ns            5 bytes=0 bytes_per_second=5.23256M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):24/manual_time_cv           0.02 %          0.06 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):25/manual_time           1280901 ns    613293266 ns          561 bytes=33.5544M bytes_per_second=24.3969G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):25/manual_time           1249369 ns    661086857 ns          561 bytes=33.5544M bytes_per_second=25.0126G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):25/manual_time           1269103 ns    628395692 ns          561 bytes=33.5544M bytes_per_second=24.6237G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):25/manual_time           1253856 ns    655096074 ns          561 bytes=33.5544M bytes_per_second=24.9231G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):25/manual_time           1275865 ns    615956502 ns          561 bytes=33.5544M bytes_per_second=24.4932G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):25/manual_time_mean      1265819 ns    634765678 ns            5 bytes=33.5544M bytes_per_second=24.6899G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):25/manual_time_median    1269103 ns    628395692 ns            5 bytes=33.5544M bytes_per_second=24.6237G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):25/manual_time_stddev      13719 ns     22144727 ns            5 bytes=0 bytes_per_second=274.52M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):25/manual_time_cv           1.08 %          3.49 %             5 bytes=0.00% bytes_per_second=1.09% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):26/manual_time           2401574 ns    827974291 ns          292 bytes=67.1089M bytes_per_second=26.0246G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):26/manual_time           2404026 ns    823356890 ns          292 bytes=67.1089M bytes_per_second=25.9981G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):26/manual_time           2401519 ns    824738929 ns          292 bytes=67.1089M bytes_per_second=26.0252G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):26/manual_time           2402018 ns    811476079 ns          292 bytes=67.1089M bytes_per_second=26.0198G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):26/manual_time           2400438 ns    811006494 ns          292 bytes=67.1089M bytes_per_second=26.0369G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):26/manual_time_mean      2401915 ns    819710537 ns            5 bytes=67.1089M bytes_per_second=26.0209G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):26/manual_time_median    2401574 ns    823356890 ns            5 bytes=67.1089M bytes_per_second=26.0246G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):26/manual_time_stddev       1316 ns      7912599 ns            5 bytes=0 bytes_per_second=14.5893M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):26/manual_time_cv           0.05 %          0.97 %             5 bytes=0.00% bytes_per_second=0.05% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):27/manual_time           4776640 ns    904705549 ns          147 bytes=134.218M bytes_per_second=26.169G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):27/manual_time           4777145 ns    909476214 ns          147 bytes=134.218M bytes_per_second=26.1663G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):27/manual_time           4776168 ns    903083930 ns          147 bytes=134.218M bytes_per_second=26.1716G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):27/manual_time           4777925 ns    905779115 ns          147 bytes=134.218M bytes_per_second=26.162G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):27/manual_time           4776812 ns    907840184 ns          147 bytes=134.218M bytes_per_second=26.1681G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):27/manual_time_mean      4776938 ns    906176998 ns            5 bytes=134.218M bytes_per_second=26.1674G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):27/manual_time_median    4776812 ns    905779115 ns            5 bytes=134.218M bytes_per_second=26.1681G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):27/manual_time_stddev        655 ns      2526933 ns            5 bytes=0 bytes_per_second=3.67375M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):27/manual_time_cv           0.01 %          0.28 %             5 bytes=0.00% bytes_per_second=0.01% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):28/manual_time           9528581 ns    974389377 ns           73 bytes=268.435M bytes_per_second=26.2369G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):28/manual_time           9528662 ns    958821927 ns           73 bytes=268.435M bytes_per_second=26.2366G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):28/manual_time           9527888 ns    960520072 ns           73 bytes=268.435M bytes_per_second=26.2388G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):28/manual_time           9527533 ns    960278943 ns           73 bytes=268.435M bytes_per_second=26.2397G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):28/manual_time           9527594 ns    967636722 ns           73 bytes=268.435M bytes_per_second=26.2396G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):28/manual_time_mean      9528051 ns    964329408 ns            5 bytes=268.435M bytes_per_second=26.2383G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):28/manual_time_median    9527888 ns    960520072 ns            5 bytes=268.435M bytes_per_second=26.2388G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):28/manual_time_stddev        538 ns      6583900 ns            5 bytes=0 bytes_per_second=1.51711M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):28/manual_time_cv           0.01 %          0.68 %             5 bytes=0.00% bytes_per_second=0.01% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):29/manual_time          19035296 ns   1033070361 ns           37 bytes=536.871M bytes_per_second=26.267G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):29/manual_time          19036645 ns   1033545764 ns           37 bytes=536.871M bytes_per_second=26.2651G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):29/manual_time          19032784 ns   1060158163 ns           37 bytes=536.871M bytes_per_second=26.2705G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):29/manual_time          19034527 ns   1059246902 ns           37 bytes=536.871M bytes_per_second=26.2681G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):29/manual_time          19034224 ns   1062930212 ns           37 bytes=536.871M bytes_per_second=26.2685G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):29/manual_time_mean     19034695 ns   1049790280 ns            5 bytes=536.871M bytes_per_second=26.2678G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):29/manual_time_median   19034527 ns   1059246902 ns            5 bytes=536.871M bytes_per_second=26.2681G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):29/manual_time_stddev       1420 ns     15108098 ns            5 bytes=0 bytes_per_second=2.00683M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):29/manual_time_cv           0.01 %          1.44 %             5 bytes=0.00% bytes_per_second=0.01% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):30/manual_time          37999730 ns   1130163201 ns           18 bytes=1073.74M bytes_per_second=26.316G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):30/manual_time          37999907 ns   1128575605 ns           18 bytes=1073.74M bytes_per_second=26.3159G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):30/manual_time          37986066 ns   1129896157 ns           18 bytes=1073.74M bytes_per_second=26.3254G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):30/manual_time          37989781 ns   1129767792 ns           18 bytes=1073.74M bytes_per_second=26.3229G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):30/manual_time          37990643 ns   1127958549 ns           18 bytes=1073.74M bytes_per_second=26.3223G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):30/manual_time_mean     37993225 ns   1129272261 ns            5 bytes=1073.74M bytes_per_second=26.3205G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):30/manual_time_median   37990643 ns   1129767792 ns            5 bytes=1073.74M bytes_per_second=26.3223G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):30/manual_time_stddev       6260 ns       953905 ns            5 bytes=0 bytes_per_second=4.44056M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_PinnedToGPU/0/0/log2(N):30/manual_time_cv           0.02 %          0.08 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+[2023-10-09 17:44:02.970] [scope] [warning] unable to restore turbo state: no permission. (use enable-turbo tool if needed)
+[2023-10-09 17:44:02.970] [scope] [warning] unable to restore CPU governor: no permission. (use set-minimum tool if needed)
+Comm|Scope 0.12.0 v0.12.0@124999d
+  scope 1.1.2 HEAD@124999d
+    spdlog 1.6.1
+    benchmark 1.5.1
+[2023-10-09 17:44:03.141] [scope] [info] recorded system CPU turbo state
+[2023-10-09 17:44:03.142] [scope] [info] recorded CPU goveror
+[2023-10-09 17:44:03.142] [scope] [error] unable to disable CPU turbo: no permission. Run with higher privileges?
+[2023-10-09 17:44:03.142] [scope] [error] unable to set OS CPU governor to maximum: no permission. Run with higher privileges?
+2023-10-09T17:44:05-04:00
+Running /lustre/orion/csc465/scratch/cpearson/frontier-gpu-bandwidth/build/comm_scope
+Run on (128 X 1813.34 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x64)
+  L1 Instruction 32 KiB (x64)
+  L2 Unified 512 KiB (x64)
+  L3 Unified 32768 KiB (x8)
+Load Average: 2.29, 5.25, 19.34
+------------------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                    Time             CPU   Iterations UserCounters...
+------------------------------------------------------------------------------------------------------------------------------
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):8/manual_time               7579 ns        14577 ns        92456 bytes=256 bytes_per_second=32.2124M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):8/manual_time               7582 ns        14620 ns        92456 bytes=256 bytes_per_second=32.2014M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):8/manual_time               7612 ns        14589 ns        92456 bytes=256 bytes_per_second=32.0747M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):8/manual_time               7565 ns        14601 ns        92456 bytes=256 bytes_per_second=32.2717M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):8/manual_time               7612 ns        14579 ns        92456 bytes=256 bytes_per_second=32.0713M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):8/manual_time_mean          7590 ns        14593 ns            5 bytes=256 bytes_per_second=32.1663M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):8/manual_time_median        7582 ns        14589 ns            5 bytes=256 bytes_per_second=32.2014M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):8/manual_time_stddev        21.1 ns         17.7 ns            5 bytes=0 bytes_per_second=91.4346k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):8/manual_time_cv            0.28 %          0.12 %             5 bytes=0.00% bytes_per_second=0.28% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):9/manual_time               8026 ns        14984 ns        86703 bytes=512 bytes_per_second=60.8401M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):9/manual_time               8062 ns        15055 ns        86703 bytes=512 bytes_per_second=60.5625M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):9/manual_time               8042 ns        14996 ns        86703 bytes=512 bytes_per_second=60.7192M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):9/manual_time               8051 ns        15062 ns        86703 bytes=512 bytes_per_second=60.6513M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):9/manual_time               8028 ns        14983 ns        86703 bytes=512 bytes_per_second=60.8211M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):9/manual_time_mean          8042 ns        15016 ns            5 bytes=512 bytes_per_second=60.7188M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):9/manual_time_median        8042 ns        14996 ns            5 bytes=512 bytes_per_second=60.7192M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):9/manual_time_stddev        15.4 ns         39.1 ns            5 bytes=0 bytes_per_second=119.173k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):9/manual_time_cv            0.19 %          0.26 %             5 bytes=0.00% bytes_per_second=0.19% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):10/manual_time              9012 ns        16001 ns        77804 bytes=1024 bytes_per_second=108.362M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):10/manual_time              9063 ns        16098 ns        77804 bytes=1024 bytes_per_second=107.755M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):10/manual_time              8852 ns        15874 ns        77804 bytes=1024 bytes_per_second=110.32M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):10/manual_time              9005 ns        16072 ns        77804 bytes=1024 bytes_per_second=108.443M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):10/manual_time              8864 ns        15858 ns        77804 bytes=1024 bytes_per_second=110.172M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):10/manual_time_mean         8959 ns        15980 ns            5 bytes=1024 bytes_per_second=109.01M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):10/manual_time_median       9005 ns        16001 ns            5 bytes=1024 bytes_per_second=108.443M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):10/manual_time_stddev       95.1 ns          111 ns            5 bytes=0 bytes_per_second=1.16005M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):10/manual_time_cv           1.06 %          0.69 %             5 bytes=0.00% bytes_per_second=1.06% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):11/manual_time              9612 ns        16555 ns        72804 bytes=2.048k bytes_per_second=203.205M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):11/manual_time              9617 ns        16590 ns        72804 bytes=2.048k bytes_per_second=203.087M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):11/manual_time              9608 ns        16573 ns        72804 bytes=2.048k bytes_per_second=203.277M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):11/manual_time              9613 ns        16592 ns        72804 bytes=2.048k bytes_per_second=203.166M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):11/manual_time              9607 ns        16534 ns        72804 bytes=2.048k bytes_per_second=203.306M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):11/manual_time_mean         9611 ns        16569 ns            5 bytes=2.048k bytes_per_second=203.208M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):11/manual_time_median       9612 ns        16573 ns            5 bytes=2.048k bytes_per_second=203.205M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):11/manual_time_stddev       4.14 ns         24.5 ns            5 bytes=0 bytes_per_second=89.598k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):11/manual_time_cv           0.04 %          0.15 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):12/manual_time             10153 ns        17211 ns        68983 bytes=4.096k bytes_per_second=384.727M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):12/manual_time             10149 ns        17228 ns        68983 bytes=4.096k bytes_per_second=384.88M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):12/manual_time             10152 ns        17249 ns        68983 bytes=4.096k bytes_per_second=384.787M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):12/manual_time             10150 ns        17233 ns        68983 bytes=4.096k bytes_per_second=384.847M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):12/manual_time             10151 ns        17195 ns        68983 bytes=4.096k bytes_per_second=384.805M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):12/manual_time_mean        10151 ns        17223 ns            5 bytes=4.096k bytes_per_second=384.809M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):12/manual_time_median      10151 ns        17228 ns            5 bytes=4.096k bytes_per_second=384.805M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):12/manual_time_stddev       1.54 ns         20.5 ns            5 bytes=0 bytes_per_second=59.9289k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):12/manual_time_cv           0.02 %          0.12 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):13/manual_time             11223 ns        18536 ns        62388 bytes=8.192k bytes_per_second=696.105M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):13/manual_time             11223 ns        18605 ns        62388 bytes=8.192k bytes_per_second=696.135M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):13/manual_time             11223 ns        18539 ns        62388 bytes=8.192k bytes_per_second=696.116M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):13/manual_time             11222 ns        18537 ns        62388 bytes=8.192k bytes_per_second=696.201M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):13/manual_time             11221 ns        18476 ns        62388 bytes=8.192k bytes_per_second=696.252M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):13/manual_time_mean        11222 ns        18539 ns            5 bytes=8.192k bytes_per_second=696.162M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):13/manual_time_median      11223 ns        18537 ns            5 bytes=8.192k bytes_per_second=696.135M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):13/manual_time_stddev       1.01 ns         45.4 ns            5 bytes=0 bytes_per_second=63.9499k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):13/manual_time_cv           0.01 %          0.25 %             5 bytes=0.00% bytes_per_second=0.01% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):14/manual_time             11229 ns        18931 ns        62366 bytes=16.384k bytes_per_second=1.35885G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):14/manual_time             11225 ns        19027 ns        62366 bytes=16.384k bytes_per_second=1.35939G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):14/manual_time             11230 ns        18938 ns        62366 bytes=16.384k bytes_per_second=1.35877G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):14/manual_time             11228 ns        19016 ns        62366 bytes=16.384k bytes_per_second=1.35896G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):14/manual_time             11226 ns        18887 ns        62366 bytes=16.384k bytes_per_second=1.35929G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):14/manual_time_mean        11228 ns        18960 ns            5 bytes=16.384k bytes_per_second=1.35905G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):14/manual_time_median      11228 ns        18938 ns            5 bytes=16.384k bytes_per_second=1.35896G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):14/manual_time_stddev       2.27 ns         59.7 ns            5 bytes=0 bytes_per_second=287.636k/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):14/manual_time_cv           0.02 %          0.31 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):15/manual_time             11497 ns        19542 ns        60920 bytes=32.768k bytes_per_second=2.65432G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):15/manual_time             11489 ns        19561 ns        60920 bytes=32.768k bytes_per_second=2.65626G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):15/manual_time             11499 ns        19526 ns        60920 bytes=32.768k bytes_per_second=2.65401G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):15/manual_time             11491 ns        19555 ns        60920 bytes=32.768k bytes_per_second=2.65584G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):15/manual_time             11500 ns        19540 ns        60920 bytes=32.768k bytes_per_second=2.6537G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):15/manual_time_mean        11495 ns        19545 ns            5 bytes=32.768k bytes_per_second=2.65482G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):15/manual_time_median      11497 ns        19542 ns            5 bytes=32.768k bytes_per_second=2.65432G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):15/manual_time_stddev       4.96 ns         13.7 ns            5 bytes=0 bytes_per_second=1.17373M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):15/manual_time_cv           0.04 %          0.07 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):16/manual_time             12422 ns        22861 ns        56362 bytes=65.536k bytes_per_second=4.91332G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):16/manual_time             12421 ns        22947 ns        56362 bytes=65.536k bytes_per_second=4.91401G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):16/manual_time             12422 ns        22861 ns        56362 bytes=65.536k bytes_per_second=4.91355G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):16/manual_time             12409 ns        22932 ns        56362 bytes=65.536k bytes_per_second=4.91846G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):16/manual_time             12418 ns        22897 ns        56362 bytes=65.536k bytes_per_second=4.91518G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):16/manual_time_mean        12418 ns        22900 ns            5 bytes=65.536k bytes_per_second=4.91491G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):16/manual_time_median      12421 ns        22897 ns            5 bytes=65.536k bytes_per_second=4.91401G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):16/manual_time_stddev       5.34 ns         40.0 ns            5 bytes=0 bytes_per_second=2.16533M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):16/manual_time_cv           0.04 %          0.17 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):17/manual_time             14541 ns        28082 ns        48140 bytes=131.072k bytes_per_second=8.39503G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):17/manual_time             14538 ns        28189 ns        48140 bytes=131.072k bytes_per_second=8.39686G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):17/manual_time             14541 ns        28087 ns        48140 bytes=131.072k bytes_per_second=8.39467G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):17/manual_time             14541 ns        28208 ns        48140 bytes=131.072k bytes_per_second=8.39469G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):17/manual_time             14544 ns        28107 ns        48140 bytes=131.072k bytes_per_second=8.39311G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):17/manual_time_mean        14541 ns        28135 ns            5 bytes=131.072k bytes_per_second=8.39487G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):17/manual_time_median      14541 ns        28107 ns            5 bytes=131.072k bytes_per_second=8.39469G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):17/manual_time_stddev       2.31 ns         59.5 ns            5 bytes=0 bytes_per_second=1.36665M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):17/manual_time_cv           0.02 %          0.21 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):18/manual_time             19529 ns        41785 ns        35855 bytes=262.144k bytes_per_second=12.5012G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):18/manual_time             19521 ns        41845 ns        35855 bytes=262.144k bytes_per_second=12.5066G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):18/manual_time             19529 ns        41858 ns        35855 bytes=262.144k bytes_per_second=12.5014G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):18/manual_time             19519 ns        41849 ns        35855 bytes=262.144k bytes_per_second=12.5076G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):18/manual_time             19528 ns        41837 ns        35855 bytes=262.144k bytes_per_second=12.5019G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):18/manual_time_mean        19525 ns        41835 ns            5 bytes=262.144k bytes_per_second=12.5037G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):18/manual_time_median      19528 ns        41845 ns            5 bytes=262.144k bytes_per_second=12.5019G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):18/manual_time_stddev       4.84 ns         28.8 ns            5 bytes=0 bytes_per_second=3.17372M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):18/manual_time_cv           0.02 %          0.07 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):19/manual_time             33826 ns        70191 ns        20705 bytes=524.288k bytes_per_second=14.4353G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):19/manual_time             33809 ns        70174 ns        20705 bytes=524.288k bytes_per_second=14.4425G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):19/manual_time             33823 ns        70103 ns        20705 bytes=524.288k bytes_per_second=14.4362G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):19/manual_time             33810 ns        70249 ns        20705 bytes=524.288k bytes_per_second=14.4421G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):19/manual_time             33824 ns        70156 ns        20705 bytes=524.288k bytes_per_second=14.436G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):19/manual_time_mean        33818 ns        70175 ns            5 bytes=524.288k bytes_per_second=14.4384G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):19/manual_time_median      33823 ns        70174 ns            5 bytes=524.288k bytes_per_second=14.4362G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):19/manual_time_stddev       8.31 ns         52.9 ns            5 bytes=0 bytes_per_second=3.63342M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):19/manual_time_cv           0.02 %          0.08 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):20/manual_time             57389 ns       121381 ns        12172 bytes=1048.58k bytes_per_second=17.0165G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):20/manual_time             57378 ns       121333 ns        12172 bytes=1048.58k bytes_per_second=17.0198G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):20/manual_time             57365 ns       121312 ns        12172 bytes=1048.58k bytes_per_second=17.0237G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):20/manual_time             57362 ns       121279 ns        12172 bytes=1048.58k bytes_per_second=17.0244G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):20/manual_time             57332 ns       121280 ns        12172 bytes=1048.58k bytes_per_second=17.0336G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):20/manual_time_mean        57365 ns       121317 ns            5 bytes=1048.58k bytes_per_second=17.0236G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):20/manual_time_median      57365 ns       121312 ns            5 bytes=1048.58k bytes_per_second=17.0237G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):20/manual_time_stddev       21.6 ns         42.4 ns            5 bytes=0 bytes_per_second=6.5658M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):20/manual_time_cv           0.04 %          0.03 %             5 bytes=0.00% bytes_per_second=0.04% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):21/manual_time            121425 ns       229526 ns         5772 bytes=2.09715M bytes_per_second=16.085G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):21/manual_time            121594 ns       229842 ns         5772 bytes=2.09715M bytes_per_second=16.0627G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):21/manual_time            121437 ns       229453 ns         5772 bytes=2.09715M bytes_per_second=16.0834G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):21/manual_time            121403 ns       230117 ns         5772 bytes=2.09715M bytes_per_second=16.0879G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):21/manual_time            121583 ns       230116 ns         5772 bytes=2.09715M bytes_per_second=16.0641G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):21/manual_time_mean       121488 ns       229811 ns            5 bytes=2.09715M bytes_per_second=16.0766G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):21/manual_time_median     121437 ns       229842 ns            5 bytes=2.09715M bytes_per_second=16.0834G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):21/manual_time_stddev       92.2 ns          315 ns            5 bytes=0 bytes_per_second=12.4916M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):21/manual_time_cv           0.08 %          0.14 %             5 bytes=0.00% bytes_per_second=0.08% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):22/manual_time            230118 ns       437704 ns         3041 bytes=4.1943M bytes_per_second=16.975G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):22/manual_time            229975 ns       437211 ns         3041 bytes=4.1943M bytes_per_second=16.9856G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):22/manual_time            230023 ns       437265 ns         3041 bytes=4.1943M bytes_per_second=16.982G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):22/manual_time            230044 ns       437848 ns         3041 bytes=4.1943M bytes_per_second=16.9804G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):22/manual_time            230053 ns       437273 ns         3041 bytes=4.1943M bytes_per_second=16.9798G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):22/manual_time_mean       230043 ns       437460 ns            5 bytes=4.1943M bytes_per_second=16.9806G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):22/manual_time_median     230044 ns       437273 ns            5 bytes=4.1943M bytes_per_second=16.9804G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):22/manual_time_stddev       51.9 ns          294 ns            5 bytes=0 bytes_per_second=3.92017M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):22/manual_time_cv           0.02 %          0.07 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):23/manual_time            452472 ns       889985 ns         1547 bytes=8.38861M bytes_per_second=17.2663G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):23/manual_time            452325 ns       889898 ns         1547 bytes=8.38861M bytes_per_second=17.2719G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):23/manual_time            452650 ns       889992 ns         1547 bytes=8.38861M bytes_per_second=17.2595G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):23/manual_time            452427 ns       890074 ns         1547 bytes=8.38861M bytes_per_second=17.268G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):23/manual_time            452351 ns       889865 ns         1547 bytes=8.38861M bytes_per_second=17.2709G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):23/manual_time_mean       452445 ns       889963 ns            5 bytes=8.38861M bytes_per_second=17.2673G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):23/manual_time_median     452427 ns       889985 ns            5 bytes=8.38861M bytes_per_second=17.268G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):23/manual_time_stddev        129 ns         82.7 ns            5 bytes=0 bytes_per_second=5.0344M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):23/manual_time_cv           0.03 %          0.01 %             5 bytes=0.00% bytes_per_second=0.03% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):24/manual_time            889067 ns      1790009 ns          786 bytes=16.7772M bytes_per_second=17.5746G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):24/manual_time            888571 ns      1786728 ns          786 bytes=16.7772M bytes_per_second=17.5844G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):24/manual_time            888764 ns      1786225 ns          786 bytes=16.7772M bytes_per_second=17.5806G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):24/manual_time            888502 ns      1787164 ns          786 bytes=16.7772M bytes_per_second=17.5858G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):24/manual_time            888806 ns      1786989 ns          786 bytes=16.7772M bytes_per_second=17.5798G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):24/manual_time_mean       888742 ns      1787423 ns            5 bytes=16.7772M bytes_per_second=17.581G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):24/manual_time_median     888764 ns      1786989 ns            5 bytes=16.7772M bytes_per_second=17.5806G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):24/manual_time_stddev        222 ns         1488 ns            5 bytes=0 bytes_per_second=4.49603M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):24/manual_time_cv           0.02 %          0.08 %             5 bytes=0.00% bytes_per_second=0.02% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):25/manual_time           9659482 ns     18739817 ns           71 bytes=33.5544M bytes_per_second=3.23516G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):25/manual_time           9616969 ns     18676453 ns           71 bytes=33.5544M bytes_per_second=3.24946G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):25/manual_time           9635899 ns     18689815 ns           71 bytes=33.5544M bytes_per_second=3.24308G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):25/manual_time           9631547 ns     18714126 ns           71 bytes=33.5544M bytes_per_second=3.24455G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):25/manual_time           9664034 ns     18708799 ns           71 bytes=33.5544M bytes_per_second=3.23364G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):25/manual_time_mean      9641586 ns     18705802 ns            5 bytes=33.5544M bytes_per_second=3.24118G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):25/manual_time_median    9635899 ns     18708799 ns            5 bytes=33.5544M bytes_per_second=3.24308G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):25/manual_time_stddev      19769 ns        24250 ns            5 bytes=0 bytes_per_second=6.80484M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):25/manual_time_cv           0.21 %          0.13 %             5 bytes=0.00% bytes_per_second=0.21% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):26/manual_time          18686963 ns     36070115 ns           37 bytes=67.1089M bytes_per_second=3.34458G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):26/manual_time          18743002 ns     36117253 ns           37 bytes=67.1089M bytes_per_second=3.33458G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):26/manual_time          18683266 ns     36069823 ns           37 bytes=67.1089M bytes_per_second=3.34524G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):26/manual_time          18715439 ns     36105855 ns           37 bytes=67.1089M bytes_per_second=3.33949G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):26/manual_time          18644849 ns     36049191 ns           37 bytes=67.1089M bytes_per_second=3.35213G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):26/manual_time_mean     18694704 ns     36082447 ns            5 bytes=67.1089M bytes_per_second=3.3432G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):26/manual_time_median   18686963 ns     36070115 ns            5 bytes=67.1089M bytes_per_second=3.34458G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):26/manual_time_stddev      36875 ns        28182 ns            5 bytes=0 bytes_per_second=6.75291M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):26/manual_time_cv           0.20 %          0.08 %             5 bytes=0.00% bytes_per_second=0.20% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):27/manual_time          36870042 ns     70217141 ns           19 bytes=134.218M bytes_per_second=3.39029G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):27/manual_time          36919785 ns     70309112 ns           19 bytes=134.218M bytes_per_second=3.38572G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):27/manual_time          36856585 ns     70264864 ns           19 bytes=134.218M bytes_per_second=3.39152G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):27/manual_time          36834472 ns     70236869 ns           19 bytes=134.218M bytes_per_second=3.39356G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):27/manual_time          36890968 ns     70260313 ns           19 bytes=134.218M bytes_per_second=3.38836G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):27/manual_time_mean     36874370 ns     70257660 ns            5 bytes=134.218M bytes_per_second=3.38989G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):27/manual_time_median   36870042 ns     70260313 ns            5 bytes=134.218M bytes_per_second=3.39029G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):27/manual_time_stddev      32653 ns        34570 ns            5 bytes=0 bytes_per_second=3.07331M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):27/manual_time_cv           0.09 %          0.05 %             5 bytes=0.00% bytes_per_second=0.09% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):28/manual_time          73235760 ns    136685434 ns           10 bytes=268.435M bytes_per_second=3.41363G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):28/manual_time          73415408 ns    136872730 ns           10 bytes=268.435M bytes_per_second=3.40528G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):28/manual_time          73812287 ns    137255593 ns           10 bytes=268.435M bytes_per_second=3.38697G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):28/manual_time          73454287 ns    136824267 ns           10 bytes=268.435M bytes_per_second=3.40348G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):28/manual_time          73310847 ns    136690078 ns           10 bytes=268.435M bytes_per_second=3.41014G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):28/manual_time_mean     73445718 ns    136865621 ns            5 bytes=268.435M bytes_per_second=3.4039G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):28/manual_time_median   73415408 ns    136824267 ns            5 bytes=268.435M bytes_per_second=3.40528G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):28/manual_time_stddev     222282 ns       232981 ns            5 bytes=0 bytes_per_second=10.522M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):28/manual_time_cv           0.30 %          0.17 %             5 bytes=0.00% bytes_per_second=0.30% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):29/manual_time         145783100 ns    261301310 ns            5 bytes=536.871M bytes_per_second=3.42975G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):29/manual_time         145780414 ns    261344300 ns            5 bytes=536.871M bytes_per_second=3.42982G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):29/manual_time         145335454 ns    260726372 ns            5 bytes=536.871M bytes_per_second=3.44032G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):29/manual_time         145926875 ns    261412034 ns            5 bytes=536.871M bytes_per_second=3.42637G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):29/manual_time         145133340 ns    260491423 ns            5 bytes=536.871M bytes_per_second=3.44511G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):29/manual_time_mean    145591837 ns    261055088 ns            5 bytes=536.871M bytes_per_second=3.43427G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):29/manual_time_median  145780414 ns    261301310 ns            5 bytes=536.871M bytes_per_second=3.42982G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):29/manual_time_stddev     339244 ns       417568 ns            5 bytes=0 bytes_per_second=8.20185M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):29/manual_time_cv           0.23 %          0.16 %             5 bytes=0.00% bytes_per_second=0.23% hip_id=-nan% numa_id=-nan%
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):30/manual_time         284267232 ns    450656363 ns            2 bytes=1073.74M bytes_per_second=3.51782G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):30/manual_time         284685001 ns    451559402 ns            2 bytes=1073.74M bytes_per_second=3.51265G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):30/manual_time         284388185 ns    450859513 ns            2 bytes=1073.74M bytes_per_second=3.51632G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):30/manual_time         285485148 ns    451974126 ns            2 bytes=1073.74M bytes_per_second=3.50281G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):30/manual_time         284181297 ns    450904146 ns            2 bytes=1073.74M bytes_per_second=3.51888G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):30/manual_time_mean    284601372 ns    451190710 ns            5 bytes=1073.74M bytes_per_second=3.5137G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):30/manual_time_median  284388185 ns    450904146 ns            5 bytes=1073.74M bytes_per_second=3.51632G/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):30/manual_time_stddev     529532 ns       553853 ns            5 bytes=0 bytes_per_second=6.6826M/s hip_id=0 numa_id=0
+Comm_hipMemcpyAsync_GPUToPageable/0/0/log2(N):30/manual_time_cv           0.19 %          0.12 %             5 bytes=0.00% bytes_per_second=0.19% hip_id=-nan% numa_id=-nan%
+[2023-10-09 17:46:49.565] [scope] [warning] unable to restore turbo state: no permission. (use enable-turbo tool if needed)
+[2023-10-09 17:46:49.565] [scope] [warning] unable to restore CPU governor: no permission. (use set-minimum tool if needed)
+Mon 09 Oct 2023 05:46:49 PM EDT

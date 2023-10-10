@@ -1,0 +1,31 @@
+
+Lmod is automatically replacing "cce/15.0.0" with "amd/5.3.0".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.3.3" with "PrgEnv-amd/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.23
+
+Mon 09 Oct 2023 05:44:31 PM EDT
+Comm|Scope 0.12.0 v0.12.0@124999d
+  scope 1.1.2 HEAD@124999d
+    spdlog 1.6.1
+    benchmark 1.5.1
+[2023-10-09 17:44:32.336] [scope] [info] recorded system CPU turbo state
+[2023-10-09 17:44:32.337] [scope] [info] recorded CPU goveror
+[2023-10-09 17:44:32.337] [scope] [error] unable to disable CPU turbo: no permission. Run with higher privileges?
+[2023-10-09 17:44:32.337] [scope] [error] unable to set OS CPU governor to maximum: no permission. Run with higher privileges?
+2023-10-09T17:44:34-04:00
+Running /lustre/orion/csc465/scratch/cpearson/frontier-gpu-bandwidth/build/comm_scope
+Run on (128 X 1795.58 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x64)
+  L1 Instruction 32 KiB (x64)
+  L2 Unified 512 KiB (x64)
+  L3 Unified 32768 KiB (x8)
+Load Average: 0.39, 3.82, 18.50
+srun: error: frontier10439: task 0: Segmentation fault (core dumped)
+srun: Terminating StepId=1465535.0
+Mon 09 Oct 2023 05:44:40 PM EDT
