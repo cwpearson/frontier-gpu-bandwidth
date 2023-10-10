@@ -31,22 +31,4 @@ srun -c 56 -n 1 --gpus 8 $SCOPE_BUILD/comm_scope \
 --benchmark_out_format=json \
 --benchmark_out="$SCOPE_RESULTS/implicit_managed_HostWrGPU_coarse.json"
 
-srun -c 56 -n 1 --gpus 8 $SCOPE_BUILD/comm_scope \
---benchmark_repetitions=5 \
---benchmark_filter='.*implicit_managed_GPUWrHost_fine/0/0/.*' \
---benchmark_out_format=json \
---benchmark_out="$SCOPE_RESULTS/implicit_managed_GPUWrHost_fine.json"
-
-srun -c 56 -n 1 --gpus 8 $SCOPE_BUILD/comm_scope \
---benchmark_repetitions=5 \
---benchmark_filter='.*implicit_managed_GPUWrHost_coarse/0/0/.*' \
---benchmark_out_format=json \
---benchmark_out="$SCOPE_RESULTS/implicit_managed_GPUWrHost_coarse.json"
-
-srun -c 56 -n 1 --gpus 8 $SCOPE_BUILD/comm_scope \
---benchmark_repetitions=5 \
---benchmark_filter='.*implicit_mapped_GPUWrHost/0/0/.*' \
---benchmark_out_format=json \
---benchmark_out="$SCOPE_RESULTS/implicit_mapped_GPUWrHost.json"
-
 date

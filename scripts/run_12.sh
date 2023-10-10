@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH -A CSC465
-#SBATCH -J r1
+#SBATCH -J r12
 #SBATCH -o %x-%j.out
 #SBATCH -t 2:00:00
 #SBATCH -p batch
@@ -18,29 +18,29 @@ module load PrgEnv-amd/8.3.3
 export HSA_XNACK=1
 
 mkdir -p $SCOPE_RESULTS
-module list > $SCOPE_RESULTS/modules.r1.$SLURM_JOBID.txt 2>&1
-env > $SCOPE_RESULTS/env.r1.$SLURM_JOBID.txt
-rocm-smi > $SCOPE_RESULTS/rocm-smi.r1.$SLURM_JOBID.txt 2>&1
-lscpu > $SCOPE_RESULTS/lscpu.r1.$SLURM_JOBID.txt 2>&1
+module list > $SCOPE_RESULTS/modules.r12.$SLURM_JOBID.txt 2>&1
+env > $SCOPE_RESULTS/env.r12.$SLURM_JOBID.txt
+rocm-smi > $SCOPE_RESULTS/rocm-smi.r12.$SLURM_JOBID.txt 2>&1
+lscpu > $SCOPE_RESULTS/lscpu.r12.$SLURM_JOBID.txt 2>&1
 
 date
 
 srun -c 56 -n 1 --gpus 8 $SCOPE_BUILD/comm_scope \
 --benchmark_repetitions=5 \
---benchmark_filter='.*hipMemcpyAsync_GPUToPinned/0/0/.*' \
+--benchmark_filter='.*implicit_managed_GPUWrHost_fine/0/0/.*' \
 --benchmark_out_format=json \
---benchmark_out="$SCOPE_RESULTS/hipMemcpyAsync_GPUToPinned.json"
+--benchmark_out="$SCOPE_RESULTS/implicit_managed_GPUWrHost_fine.json"
 
 srun -c 56 -n 1 --gpus 8 $SCOPE_BUILD/comm_scope \
 --benchmark_repetitions=5 \
---benchmark_filter='.*hipMemcpyAsync_PinnedToGPU/0/0/.*' \
+--benchmark_filter='.*implicit_managed_GPUWrHost_coarse/0/0/.*' \
 --benchmark_out_format=json \
---benchmark_out="$SCOPE_RESULTS/hipMemcpyAsync_PinnedToGPU.json"
+--benchmark_out="$SCOPE_RESULTS/implicit_managed_GPUWrHost_coarse.json"
 
 srun -c 56 -n 1 --gpus 8 $SCOPE_BUILD/comm_scope \
 --benchmark_repetitions=5 \
---benchmark_filter='.*hipMemcpyAsync_GPUToPageable/0/0/.*' \
+--benchmark_filter='.*implicit_mapped_GPUWrHost/0/0/.*' \
 --benchmark_out_format=json \
---benchmark_out="$SCOPE_RESULTS/hipMemcpyAsync_GPUToPageable.json"
+--benchmark_out="$SCOPE_RESULTS/implicit_mapped_GPUWrHost.json"
 
 date

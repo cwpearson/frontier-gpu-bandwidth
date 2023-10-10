@@ -96,14 +96,14 @@ for pattern in [
     "implicit_managed_GPURdHost_fine",
     "implicit_managed_GPUWrGPU_coarse",
     "implicit_managed_GPUWrGPU_fine",
-    "implicit_managed_HostWrGPU_coarse",
+    # "implicit_managed_HostWrGPU_coarse", # takes too long
     "implicit_managed_HostWrGPU_fine",
     "implicit_managed_GPUWrHost_coarse",
     "implicit_managed_GPUWrHost_fine",
     "implicit_mapped_GPURdHost",
     "implicit_mapped_GPUWrGPU",
     "implicit_mapped_GPUWrHost",
-    "implicit_mapped_HostWrGPU",
+    # "implicit_mapped_HostWrGPU", # segfault
     "prefetch_managed_GPUToGPU",
     "prefetch_managed_GPUToHost",
     "prefetch_managed_HostToGPU",
@@ -112,10 +112,15 @@ for pattern in [
     for name, (x, t, terr, bw, bwerr) in series.items():
         if pattern not in name:
             continue
+        fields = name.split("/")
+        name = f'{fields[1]} -> {fields[2]}'
         plt.errorbar(x, bw, yerr=bwerr, label=name)    
     output_path = f"{pattern}.pdf"
     print(f"write {output_path}")
     plt.xscale('log')
+    plt.xlabel('transfer size [B]')
+    plt.ylabel('bandwidth [GB/s]')
+    plt.title(pattern)
     lgd = plt.legend(bbox_to_anchor=(1.04, 1))
     plt.tight_layout()
     plt.savefig(output_path, bbox_extra_artists=(lgd,), bbox_inches='tight')
